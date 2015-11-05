@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>404</title>
+    <link rel="stylesheet" href="style/global.css"/>
+    <link rel="stylesheet" href="style/error.css"/>
+</head>
+<body>
+<div class="error-zs-404"><!--error-zs-404 begin-->
+    <img src="images/logo.png" alt=""/>
+
+    <h3>对不起，您访问的页面不存在！</h3>
+
+    <p><span class="Count" id="count">10秒</span>后自动跳转到包谷首页！</p>
+    <em>可能是如下原因引起的错误:</em>
+    <em>URL输入错误</em>
+    <em>失效链接</em>
+    <em>或者······</em>
+</div>
+<!--error-zs-404 end-->
+<script>
+    window.onload = function () {
+        var count = document.getElementById('count');
+        var Num = 10;
+        var timer = null;
+
+        timer = setInterval(function () {
+            Num--;
+            if (Num == 1) {
+                clearInterval(timer);
+                window.location.href = "http://www.baidu.com";
+            }
+            count.innerHTML = Num + '秒';
+        }, 1000)
+
+    }
+</script>
+</body>
+</html>
