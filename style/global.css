@@ -47,3 +47,78 @@ a, button {
     cursor: pointer;
     text-decoration: none;
 }
+
+/****header部分****/
+.topzs {
+    width: 100%;
+    height: 104px;
+    border-bottom: #2082b3 2px solid;
+}
+
+.topzs-main {
+    width: 1000px;
+    height: 104px;
+    margin: 0 auto;
+}
+
+.topzs-main p {
+    height: 34px;
+    line-height: 34px;
+    font-size: 12px;
+    color: #333;
+}
+
+.topzs-main p a {
+    color: #069;
+    padding-right: 6px;
+}
+
+.topzs-step {
+    padding: 22px 0 10px 0;
+    height: 36px;
+    width: 100%;
+}
+
+.topzs-step a {
+    display: block;
+    float: left;
+    width: 94px;
+    height: 36px;
+    margin-right: 10px;
+}
+
+.topzs-step a img {
+    width: 94px;
+    height: 36px;
+}
+
+.topzs-step h3 {
+    float: left;
+    font-size: 24px;
+    color: #000;
+}
+
+.topzs-step ul {
+    float: right;
+    background: #f0efef;
+    height: 29px;
+    padding: 3px;
+    border-radius: 50px;
+    width: 435px;
+    text-align: center;
+}
+
+.topzs-step ul li {
+    float: left;
+    width: 145px;
+    height: 29px;
+    line-height: 29px;
+}
+
+.topzs-step ul li.active-zs {
+    background: #2c8dbd;
+    color: #fff;
+    border-radius: 50px;
+}
+
+/****header部分****/
