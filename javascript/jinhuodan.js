@@ -86,31 +86,32 @@ window.onload = function () {
 
     //购买数量加减按钮
     (function () {
-        var oMain = getByClass(document, 'mainzs')[0];
-        var agmsl = getByClass(oMain, 'gmsl');
+        var oMain = getByClass(document, 'content')[0];
+        var agmsl = getByClass(oMain, 'list-center');
 
         function calculate(aclass) {
-            var push = aclass.getElementsByTagName('i')[0];
-            var add = aclass.getElementsByTagName('i')[1];
-            var oSpan = aclass.getElementsByTagName('span')[0];
-            var oEm = aclass.getElementsByTagName('em')[0];
-            var Num = Number(oSpan.innerHTML);
+            var push = aclass.getElementsByTagName('a')[0];
+            var add = aclass.getElementsByTagName('a')[1];
+            var oInput = aclass.getElementsByTagName('input')[0];
+            var oHide = aclass.getElementsByTagName('b')[0];
+            var Num = Number(oInput.innerHTML);
 
             add.onclick = function () {
+
                 Num++;
                 if (Num > 1) {
-                    oEm.style.display = 'none';
+                    oHide.style.display = 'none';
                 }
-                oSpan.innerHTML = Num;
+                oInput.value = Num;
             }
 
             push.onclick = function () {
                 Num--;
                 if (Num < 1) {
-                    oEm.style.display = 'block';
+                    oHide.style.display = 'block';
                     Num = 1;
                 }
-                oSpan.innerHTML = Num;
+                oInput.value = Num;
             }
 
         }
@@ -120,34 +121,5 @@ window.onload = function () {
         }
 
     })();
-
-    //全选和单选
-    (function(){
-        var mainzs = document.getElementById('mainzs');
-        var btnall = document.getElementById('btnall');//最大的按钮
-        var checkzs = getByClass(mainzs,'checkzs')[0];
-        var subbtn = checkzs.getElementsByTagName('i')[0];
-        var mainlist = getByClass(mainzs,'mainzs-list');
-        var smallbtn = getByClass(mainlist[0],'smallbtn');
-
-        function isCheck(){
-            subbtn.onclick = function(){
-                if(this.className == "active-check"){
-                    this.className = ""
-                } else {
-                    this.className = "active-check";
-                }
-
-                for(var i = 0; i < smallbtn.length; i++){
-                    smallbtn[i].className = this.className + ' smallbtn';
-                }
-
-            }
-        }
-
-        isCheck();
-    })();
-
-
 
 }
