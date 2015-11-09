@@ -397,7 +397,7 @@
                     <em class="tuan">团</em>
                     <div class="list-left">
                         <img src="images/img.png" alt=""/>
-                        <a href="#" target="_blank" title="">各种淀粉各种牛奶各种欧巴在售各
+                        <a href="#" target="_blank" title="" class="colorbe">各种淀粉各种牛奶各种欧巴在售各
                             种淀粉各种牛奶各种欧至三十个字</a>
                         <span>品类：食品添加剂</span>
                         <p>
@@ -407,41 +407,31 @@
                     </div>
                     <div class="list-center">
                         <div class="list-center-left">
-                            <p>1-24公斤:12，34512</p>
-                            <span>原价:<s>23-21公斤:1，2345，99</s></span>
-                            <span>原价:<s>23-21公斤:1，2345，99</s></span>
-                            <span>原价:<s>23-21公斤:1，2345，99</s></span>
-                            <strong>团购价:13，2456，99</strong>
+                            <p class="colorbe">1-24公斤:12，34512</p>
+                            <span class="colorbe">原价:<s>23-21公斤:1，2345，99</s></span>
+                            <span class="colorbe">原价:<s>23-21公斤:1，2345，99</s></span>
+                            <span class="colorbe">原价:<s>23-21公斤:1，2345，99</s></span>
+                            <strong class="colorbe">团购价:13，2456，99</strong>
                         </div>
                         <div class="list-center-right">
-                            <a href="javascript:;" class="jian"></a>
+                            <a href="javascript:;" class="active"></a>
                             <span class="backg">1</span>
-                            <a class="jia" href="javascript:;"></a>
+                            <a class="jiaactive" href="javascript:;"></a>
                             <small>数量不能小于1</small>
                         </div>
                     </div>
                     <div class="list-right">
-                        <p>￥7，66，2000.99</p>
-                        <small>以节省￥3，666.00</small>
+                        <p class="colorbe">￥7，66，2000.99</p>
+                        <small class="colorbe">以节省￥3，666.00</small>
                     </div>
                 </div>
                 <hr class="linear"/>
                 <div class="list">
-                    <div class="xinjiage">
-                        <div>
-                            <h5>历史价格</h5>
-                            <span></span>
-                        </div>
-                        <strong>1-24公斤：23424.00</strong>
-                        <p>1-23公斤：<s>12，234.00</s></p>
-                        <p>2-23公斤：<s>847589，00</s></p>
-                        <p>3-23公斤：<s>8909.00</s></p>
-                    </div>
                     <i></i>
                     <em class="tuan">团</em>
                     <div class="list-left">
                         <img src="images/img.png" alt=""/>
-                        <a href="#" target="_blank" title="">各种淀粉各种牛奶各种欧巴在售各
+                        <a href="#" target="_blank" title="" class="colorbe">各种淀粉各种牛奶各种欧巴在售各
                             种淀粉各种牛奶各种欧至三十个字</a>
                         <span>品类：食品添加剂</span>
                         <p>
@@ -451,31 +441,52 @@
                     </div>
                     <div class="list-center">
                         <div class="list-center-left">
-                            <p>1-24公斤:12，34512</p>
-                            <span>原价:<s>23-21公斤:1，2345，99</s></span>
-                            <span>原价:<s>23-21公斤:1，2345，99</s></span>
-                            <span>原价:<s>23-21公斤:1，2345，99</s></span>
-                            <strong>团购价:13，2456，99</strong>
+                            <p class="colorbe">1-24公斤:12，34512</p>
+                            <span class="colorbe">原价:<s>23-21公斤:1，2345，99</s></span>
+                            <span class="colorbe">原价:<s>23-21公斤:1，2345，99</s></span>
+                            <span class="colorbe">原价:<s>23-21公斤:1，2345，99</s></span>
+                            <strong class="colorbe">团购价:13，2456，99</strong>
                         </div>
                         <div class="list-center-right">
-                            <a href="javascript:;" class="jian"></a>
+                            <a href="javascript:;" class="active"></a>
                             <span class="backg">1</span>
-                            <a class="jia" href="javascript:;"></a>
+                            <a class="jiaactive" href="javascript:;"></a>
                             <small>数量不能小于1</small>
                         </div>
                     </div>
                     <div class="list-right">
-                        <p>￥7，66，2000.99</p>
-                        <small>以节省￥3，666.00</small>
+                        <p class="colorbe">￥7，66，2000.99</p>
+                        <small class="colorbe">以节省￥3，666.00</small>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div><!--wrap end-->
-<div class="mask"></div>
-<div class="removemask"></div>
-<div class="collecmask"></div>
+<div class="mask" id="mask"></div>
+<div class="mask-main-remove">
+    <div>
+        <h4>提示信息</h4>
+        <span class="close-mask"></span>
+    </div>
+    <p>确定要删除该商品吗？</p>
+    <a href="#" id="surezs">确定</a>
+    <em>移入收藏夹</em>
+</div>
+<div class="mask-main-collect">
+    <div>
+        <h4>提示信息</h4>
+        <span id="close-collect"  class="close-mask"></span>
+    </div>
+    <em>移到收藏夹,将不会在订货单内显示</em>
+    <p>
+        <i class="collectzs" id="collbtn"></i>
+        <input type="checkbox" id="collectzs"/>
+        <label for="collectzs">以后不再提示</label>
+        <a href="#" class="collectsure">确定</a>
+        <a href="#"class="collectcancle">取消</a>
+    </p>
+</div>
 <script src="javascript/getByClass.js"></script>
 <script src="javascript/jhd.js"></script>
 </body>

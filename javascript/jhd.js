@@ -165,5 +165,58 @@ window.onload = function () {
 
     })();
 
+    //mask弹出层
+    (function(){
+        var oMask = document.getElementById('mask');
+        var content = document.getElementById('content');
+        var clientHeight = document.body.clientHeight;
+        var remove = getByClass(content,'remove');
+        var collect = getByClass(content,'collect');
+        var closeMask = getByClass(document,'close-mask');
+        var maskRemove = getByClass(document,'mask-main-remove')[0];
+        var maskCollect = getByClass(document,'mask-main-collect')[0];
+        var checkzs = document.getElementById('collectzs');
+        var collBtn = document.getElementById('collbtn');
+
+        oMask.style.height = clientHeight + 'px';
+
+        //收藏夹不再提示按钮：
+        checkzs.onclick = function(){
+            if(this.checked == true){
+                collBtn.className = 'collectactive';
+            }else{
+                collBtn.className = 'collectzs';
+            }
+        }
+
+        //弹出层右上角关闭按钮
+        for(var i=0;i<closeMask.length;i++){
+            closeMask[i].onclick = function(){
+                oMask.style.display = 'none';
+                maskRemove.style.display = 'none';
+                maskCollect.style.display = 'none';
+            }
+        }
+
+        //删除按钮点击
+        for(var i=0;i<remove.length;i++){
+            remove[i].onclick = function(){
+                oMask.style.display = 'block';
+                maskRemove.style.display = 'block';
+                maskCollect.style.display = 'none';
+            }
+        }
+
+        //收藏按钮点击
+        for(var i=0;i<collect.length;i++){
+            collect[i].onclick = function(){
+                oMask.style.display = 'block';
+                maskRemove.style.display = 'none';
+                maskCollect.style.display = 'block';
+            }
+        }
+
+    })();
+
 }
 

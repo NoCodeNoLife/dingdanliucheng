@@ -327,12 +327,24 @@
     background: url("../images/push.png") no-repeat 0 -37px;
 }
 
+.list-center-right a.jia:hover{
+    background: url("../images/hover.png") no-repeat 0 -37px;
+}
+
+.list-center-right a.jiaactive{
+    background: url("../images/jiaactive.png") no-repeat;
+}
+
 .list-center-right a.active{
     background: url("../images/push.png") no-repeat 0 -74px;
 }
 
 .list-center-right a.jian {
     background: url("../images/push.png") no-repeat;
+}
+
+.list-center-right a.jian:hover{
+    background: url("../images/hover.png") no-repeat;
 }
 
 .list-center-right span {
@@ -474,7 +486,7 @@
     width: 1000px;
     height: auto;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 0 auto 26px;
     position: relative;
 }
 
@@ -515,6 +527,10 @@
     background: url("../images/active.png") no-repeat 0 -108px;
 }
 
+.list-left a.colorbe,.list-center-left p.colorbe,.list-center-left strong.colorbe,.list-center-left span.colorbe,.list-right p.colorbe,.list-right small.colorbe{
+    color: #bebebe;
+}
+
 .gray{
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
@@ -534,7 +550,6 @@
 
 .mask{
     width: 100%;
-    height: 900px;
     position: fixed;
     left: 0;
     top: 0;
@@ -542,4 +557,153 @@
     opacity: .4;
     filter: alpha(opacity: .4);
     z-index: 998;
+    display: none;
 }
+
+
+.mask-main-remove, .mask-main-collect {
+    width: 398px;
+    height: 196px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -98px 0 0 -199px;
+    background: #fff;
+    z-index: 999;
+    font-size: 12px;
+    display: none;
+}
+
+.mask-main-remove div, .mask-main-collect div {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: #d3d3d3 1px solid;
+}
+
+.mask-main-remove div h4, .mask-main-collect h4 {
+    width: 104px;
+    float: left;
+    border-bottom: #069 2px solid;
+    height: 40px;
+    text-align: center;
+    color: #333;
+    font-weight: normal;
+}
+
+.mask-main-remove div span, .mask-main-collect span {
+    display: block;
+    float: right;
+    width: 16px;
+    height: 16px;
+    background: url("../images/closezs.png") no-repeat;
+    margin: 20px;
+}
+
+.mask-main-remove div span:hover, .mask-main-collect span:hover {
+    cursor: pointer;
+}
+
+.mask-main-remove p, .mask-main-collect em {
+    margin: 36px 0 44px 0;
+    width: 370px;
+    padding-left: 28px;
+    color: #666;
+    font-size: 14px;
+    display: block;
+}
+
+.mask-main-remove a {
+    display: block;
+    background: #008ad2;
+    color: #fff;
+    text-align: center;
+    width: 86px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    margin: 0 22px 0 172px;
+    border-radius: 5px;
+}
+
+.mask-main-collect p {
+    height: 30px;
+    padding-left: 28px;
+    position: relative;
+    line-height: 28px;
+}
+
+.mask-main-collect p input, .mask-main-collect p i {
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 7px;
+    left: 28px;
+}
+
+.mask-main-collect p input {
+    opacity: 0;
+    filter: alpha(opacity:0);
+}
+
+.mask-main-collect p i {
+    background: url("../images/checkzs.png") no-repeat;
+}
+
+.mask-main-collect p i.collectactive{
+    background: url("../images/checkzs.png") no-repeat 0 -26px;
+}
+
+.mask-main-collect p label{
+    display: block;
+    float: left;
+    margin-left: 22px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.mask-main-collect p a {
+    display: block;
+    float: left;
+    width: 86px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+.mask-main-collect p a.collectsure{
+    margin: 0 16px 0 46px;
+    background: #008bd1;
+}
+
+.mask-main-collect p a.collectcancle{
+    background: #d3d3d3;
+}
+
+.mask-main-collect p a.collectsure:hover{
+    background: #c00;
+}
+
+.mask-main-collect p a.collectcancle:hover{
+    background: #929191;
+}
+
+.mask-main-remove a:hover {
+    background: #c00;
+}
+
+.mask-main-remove em {
+    float: left;
+    color: #016797;
+    height: 30px;
+    line-height: 30px;
+}
+
+.mask-main-remove em:hover {
+    cursor: pointer;
+    color: #c00;
+}
+
