@@ -1,0 +1,508 @@
+.wrap {
+    width: 100%;
+    height: auto;
+    background: #f3f3f3;
+    overflow: hidden;
+}
+
+.content {
+    width: 1000px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto 58px;
+}
+
+.shrxinxi {
+    width: 1000px;
+    height: auto;
+    overflow: auto;
+}
+
+.shrxinxi span, .content span.subtip {
+    display: block;
+    width: 976px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 12px;
+    font-size: 14px;
+    color: #333;
+}
+
+.box {
+    width: 948px;
+    height: auto;
+    overflow: hidden;
+    background: #fff;
+    padding: 22px 26px 0 26px;
+    position: relative;
+}
+
+.box ol {
+    width: 948px;
+    height: 176px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.boxlist {
+    width: 948px;
+    height: 176px;
+}
+
+.box li div {
+    width: 260px;
+    height: 132px;
+    margin: 0 14px 14px 0;
+    padding: 14px 20px;
+    float: left;
+    border: #dadada 1px solid;
+}
+
+.box li div:hover {
+    border: #ff9936 1px solid;
+}
+
+.box li div p {
+    height: 16px;
+    width: 260px;
+    font-size: 12px;
+    color: #999;
+}
+
+.box li div p span {
+    height: 16px;
+    line-height: 16px;
+    display: block;
+    float: left;
+    width: 100px;
+    font-size: 12px;
+    color: #069;
+}
+
+.box li div p span {
+    background: none;
+    color: #999;
+    padding-left: 0;
+}
+
+.box li div p span:hover {
+    cursor: pointer;
+}
+
+.box li div p em {
+    float: right;
+    height: 16px;
+    display: block;
+    float: right;
+    width: 60px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.box li div p em:hover, .box li div p small:hover {
+    cursor: pointer;
+}
+
+.box li div p small {
+    height: 16px;
+    float: right;
+    display: block;
+    float: right;
+    width: 30px;
+    text-align: right;
+}
+
+.box li div ul {
+    padding-top: 14px;
+    width: 260px;
+    height: 106px;
+}
+
+.box li div ul li {
+    font-size: 14px;
+    width: 260px;
+    color: #333;
+    margin-botom: 6px;
+}
+
+.box li div ul li {
+    color: #999;
+}
+
+.box li div:hover li {
+    color: #333;
+}
+
+.box li div.adresslist-active {
+    background: url("../images/addressacive.png") no-repeat;
+    border: 0;
+}
+
+.box li div.adresslist-active li {
+    color: #333;
+}
+
+.box li div.adresslist-active span {
+    background: url("../images/address.png") no-repeat;
+    padding-left: 16px;
+    color: #2c8dbd;
+}
+
+.add {
+    position: absolute;
+    width: 932px;
+    height: 14px;
+    clear: both;
+    left: 26px;
+    bottom: 16px;
+    background: #fff;
+}
+
+.add a {
+    display: block;
+    color: #069;
+    font-size: 12px;
+    height: 14px;
+    line-height: 14px;
+}
+
+.add a.showall {
+    width: 88px;
+    float: left;
+    background: url("../images/icondefault.png") no-repeat 74px 5px;
+}
+
+.add a.showall-active {
+    width: 88px;
+    float: left;
+    background: url("../images/icondefault.png") no-repeat 74px -19px;
+}
+
+.add a.showall-active:hover {
+    background: url("../images/iconactive.png") no-repeat 75px -19px;
+    color: #c00;
+}
+
+.add a.showall:hover {
+    background: url("../images/iconactive.png") no-repeat 75px 5px;
+    color: #c00;
+}
+
+.add a.newadd {
+    width: 90px;
+    float: right;
+    text-align: right;
+    background: url("../images/icondefault.png") no-repeat 0 -51px;
+}
+
+.add a.newadd:hover {
+    background: url("../images/iconactive.png") no-repeat 1px -51px;
+    color: #c00;
+}
+
+.fpiao {
+    width: 100%;
+    height: 90px;
+    background: #fff;
+}
+
+.fpiao a {
+    border: #ccc 1px solid;
+    display: inline-block;
+    width: 126px;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin: 23px 0 0 29px;
+}
+
+.fpiao a.fpactive {
+    background: url("../images/fp.png") no-repeat;
+    border: 0;
+}
+
+.fpiao a.fpactive:hover {
+    border: none;
+}
+
+.fpiao a:hover {
+    border: #069 1px solid;
+}
+
+.sure {
+    width: 1000px;
+    height: auto;
+    overflow: hidden;
+    background: #fff;
+}
+
+.subnav {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: #069 1px solid;
+    font-size: 14px;
+    color: #333;
+    width: 1000px;
+    padding-top: 8px;
+}
+
+.subnav i {
+    background: url("../images/icondefault.png") no-repeat 0 -82px;
+    line-height: 40px;
+    margin-left: 32px;
+    padding-left: 22px;
+    font-size: 14px;
+    color: #333;
+}
+
+.surelist {
+    width: 1000px;
+    height: 154px;
+    background: #fff;
+}
+
+.list-left {
+    width: 530px;
+    height: 154px;
+    float: left;
+}
+
+.list-left img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    float: left;
+    margin: 28px 26px 48px 47px;
+}
+
+.list-left a.title {
+    display: block;
+    float: left;
+    width: 214px;
+    display: block;
+    font-size: 14px;
+    color: #069;
+    overflow: hidden;
+    height: 34px;
+    line-height: 17px;
+    margin: 28px 0 14px 0;
+}
+
+.list-left span {
+    color: #999;
+    font-size: 12px;
+    display: block;
+    width: 370px;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.list-left span em {
+    width: 64px;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+    border: #ff9147 1px solid;
+    display: inline-block;
+    margin-left: 12px;
+}
+
+.list-left p {
+    height: 16px;
+    line-height: 16px;
+    width: 300px;
+    float: left;
+}
+
+.list-left p a {
+    clear: both;
+    font-size: 12px;
+    color: #666;
+    padding-left: 20px;
+    margin-right: 22px;
+}
+
+.list-left p a.list-remove {
+    background: url("../images/icondefault.png") no-repeat 0 -124px;
+}
+
+.list-left p a.list-remove:hover {
+    background: url("../images/iconactive.png") no-repeat 0 -124px;
+    color: #c00;
+}
+
+.list-left p a.list-back {
+    background: url("../images/icondefault.png") no-repeat 0 -161px;
+}
+
+.list-left p a.list-back:hover {
+    background: url("../images/iconactive.png") no-repeat 0 -161px;
+    color: #c00;
+}
+
+.list-center {
+    width: 190px;
+    height: 130px;
+    float: left;
+    padding-top: 24px;
+}
+
+.list-center strong {
+    float: left;
+    font-weight: normal;
+    font-size: 14px;
+    color: #333;
+    height: 27px;
+    line-height: 27px;
+}
+
+.list-center a {
+    width: 27px;
+    height: 27px;
+    float: left;
+}
+
+.list-center span {
+    width: 58px;
+    height: 25px;
+    border: #e3e3e3 1px solid;
+    border-left: 0;
+    float: left;
+    background: #fff;
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+}
+
+.list-center a.jia {
+    background: url("../images/push.png") no-repeat 0 -37px;
+}
+
+.list-center a.jian {
+    background: url("../images/push.png") no-repeat;
+}
+
+.list-center a.active {
+    background: url("../images/push.png") no-repeat 0 -74px;
+}
+
+.list-center small {
+    width: 180px;
+    height: 14px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #666;
+    margin-top: 32px;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+}
+
+.list-right {
+    width: 230px;
+    height: 154px;
+    float: left;
+    text-align: right;
+}
+
+.list-right p {
+    font-size: 18px;
+    color: #333;
+    margin: 24px 0 64px 0;
+}
+
+.list-right span {
+    font-size: 16px;
+    color: #333;
+}
+
+.linear {
+    width: 100%;
+    height: 1px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    background: #f3f3f3;
+    border: 0;
+}
+
+.liuyan {
+    width: 1000px;
+    height: 214px;
+    border-top: #eee 2px solid;
+}
+
+.liuyan-left {
+    width: 500px;
+    float: left;
+    height: 214px;
+}
+
+.liuyan-left p {
+    font-size: 14px;
+    color: #666;
+    margin: 32px 0 10px 0;
+    padding-left: 48px;
+}
+
+.liuyan-left textarea {
+    margin-left: 48px;
+    width: 348px;
+    height: 88px;
+    resize: none;
+    padding: 16px;
+    border: #ccc 1px solid;
+    color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
