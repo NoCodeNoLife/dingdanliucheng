@@ -26,7 +26,7 @@
 </div>
 <!--topzs end-->
 <div class="wrap"><!--wrap begin-->
-    <div class="content"><!--content begin-->
+    <div class="content" id="content"><!--content begin-->
         <div class="shrxinxi"><!--shrxinxi begin-->
             <span>收货人信息</span>
 
@@ -125,13 +125,146 @@
         <!--shrxinxi end-->
         <span class="subtip">发票信息</span>
 
-        <p class="fpiao" id="fpiao">
-            <a href="javascript:;">增值税发票</a>
-            <a href="javascript:;">普通发票</a>
-        </p>
+        <div class="fpiao" id="fpiao">
+            <p id="btn">
+                <a href="javascript:;">增值税发票</a>
+                <a href="javascript:;">普通发票</a>
+            </p>
+            <div class="zengzs hide show" id="zzs">
+                <p><em><i>*</i>单位名称:</em><input type="text" value=""/></p>
+                <p><em><i>*</i>纳税人识别码:</em><input type="text" value=""/></p>
+                <p><em><i>*</i>注册地址:</em><input type="text" value=""/></p>
+                <p><em><i>*</i>注册电话:</em><input type="text" value=""/></p>
+                <p><em><i>*</i>开户银行:</em><input type="text" value=""/></p>
+                <p><em><i>*</i>银行账号:</em><input type="text" value=""/></p>
+                <a class="baocun" href="javascript:;" id="zzsbc">保存</a>
+                <a class="quxiao" href="javascript:;" id="zzsqx">取消</a>
+            </div>
+            <div class="creatzzs hide" id="creat">
+                <p><em>单位名称:</em><span></span></p>
+                <p><em>纳税人识别码:</em><span></span></p>
+                <p><em>注册地址:</em><span></span></p>
+                <p><em>注册电话:</em><span></span></p>
+                <p><em>开户银行:</em><span></span></p>
+                <p><em>银行账号:</em><span></span></p>
+                <a href="javascript:;" class="baocun" id="modify">修改</a>
+            </div>
+            <div class="ptfapiao hide show" id="ptfp">
+                <p><em>单位名称:</em><input type="text" value=""/></p>
+                <a class="baocun" href="javascript:;" id="ptfpbc">保存</a>
+                <a class="quxiao" href="javascript:;" id="ptfpqx">取消</a>
+            </div>
+            <div class="creatpt hide" id="ptfpcreat">
+                <p><em>单位名称:</em><span></span></p>
+                <a class="baocun" href="javascript:;" id="modify1">修改</a>
+            </div>
+        </div>
         <span class="subtip">确认采购单信息</span>
 
-        <div class="sure">
+        <div class="sure"><!--sure begin-->
+            <p class="subnav"><i>广东肇庆还行生物科技</i></p>
+            <div class="surelist">
+                <div class="list-left">
+                    <img src="images/img.png" alt=""/>
+                    <a href="javascript:;" class="title">
+                        各种淀粉各种牛奶各种欧巴在售各
+                        种淀粉各种牛奶各种欧付金额给付
+                    </a>
+                    <span>品类:食品添加剂 <em>增值税发票</em><em>增值税发票</em></span>
+                    <p>
+                        <a class="list-remove" href="javascript:;">删除</a>
+                        <a class="list-back" href="javascript:;">放回进货单</a>
+                    </p>
+                </div>
+                <div class="list-center">
+                    <strong>订数：</strong>
+                    <a href="javascript:;" class="jian"></a>
+                    <span>1</span>
+                    <a class="jia" href="javascript:;"></a>
+                    <small>≥500公斤，￥500/公斤</small>
+                </div>
+                <div class="list-right">
+                    <p>￥1,666,200.99</p>
+                    <span>运费：￥666,200.99</span>
+                </div>
+            </div>
+            <hr class="linear"/>
+            <div class="surelist">
+                <div class="list-left">
+                    <img src="images/img.png" alt=""/>
+                    <a href="javascript:;" class="title">
+                        各种淀粉各种牛奶各种欧巴在售各
+                        种淀粉各种牛奶各种欧付金额给付
+                    </a>
+                    <span>品类:食品添加剂 <em>增值税发票</em><em>增值税发票</em></span>
+                    <p>
+                        <a class="list-remove" href="javascript:;">删除</a>
+                        <a class="list-back" href="javascript:;">放回进货单</a>
+                    </p>
+                </div>
+                <div class="list-center">
+                    <strong>订数：</strong><a href="javascript:;" class="jian"></a>
+                    <span>1</span>
+                    <a class="jia" href="javascript:;"></a>
+                    <small>≥500公斤，￥500/公斤</small>
+                </div>
+                <div class="list-right">
+                    <p>￥1,666,200.99</p>
+                    <span>运费：￥666,200.99</span>
+                </div>
+            </div>
+            <div class="liuyan">
+                <div class="liuyan-left">
+                    <p>给供应商留言:</p>
+                    <textarea id="txt1">可以告诉供应商留言你的特殊要求例如：您期望的商品到货时间等信息！</textarea>
+                    <div>您还可以输入<span id="txtnum1">200</span>个字<span>/200</span></div>
+                </div>
+                <div class="liuyan-right">
+                    <form action="" id="form2">
+                        <div class="fhuofs">
+                            <em>发货方式:</em>
+                            <select name="fhuofs" id="">
+                                <option value="" selected="selected">全部时间</option>
+                                <option value="01">2016年</option>
+                                <option value="02">2014年</option>
+                                <option value="03">2013年</option>
+                                <option value="04">2012年</option>
+                                <option value="05">2014年</option>
+                            </select>
+                        </div>
+                        <div class="hjyf">
+                            <em>合计运费:</em>
+                            <input type="text" id=""/>
+                        </div>
+                        <div class="yunfzf">
+                            <em>运费支付:</em>
+                            <select name="yunfzf" id="">
+                                <option value="" selected="selected">全部时间</option>
+                                <option value="01">2016年</option>
+                                <option value="02">2014年</option>
+                                <option value="03">2013年</option>
+                                <option value="04">2012年</option>
+                                <option value="05">2014年</option>
+                            </select>
+                        </div>
+                        <div class="youhq">
+                            <em>优惠券:</em>
+                            <select name="youhq" id="">
+                                <option value="" selected="selected">全部时间</option>
+                                <option value="01">2016年</option>
+                                <option value="02">2014年</option>
+                                <option value="03">2013年</option>
+                                <option value="04">2012年</option>
+                                <option value="05">2014年</option>
+                            </select>
+                            <small>平台通用&nbsp;&nbsp;&nbsp;&nbsp;省￥5,00.00元</small>
+                        </div>
+                        <p class="shif">实付:<i>￥4,322.00元</i><b>不含运费</b></p>
+                    </form>
+                </div>
+            </div>
+        </div><!--sure end-->
+        <div class="sure"><!--sure begin-->
             <p class="subnav"><i>广东肇庆还行生物科技</i></p>
             <div class="surelist">
                 <div class="list-left">
@@ -185,11 +318,62 @@
             <div class="liuyan">
                 <div class="liuyan-left">
                     <p>给供应商留言:</p>
-                    <textarea name="">可以告诉供应商留言你的特殊要求例如：您期望的商品到货时间等信息！</textarea>
+                    <textarea id="txt">可以告诉供应商留言你的特殊要求例如：您期望的商品到货时间等信息！</textarea>
+                    <div>您还可以输入<span id="txtnum">200</span>个字<span>/200</span></div>
+                </div>
+                <div class="liuyan-right">
+                    <form action="" id="form1">
+                        <div class="fhuofs">
+                            <em>发货方式:</em>
+                            <select name="fhuofs1" id="fhuofs">
+                                <option value="" selected="selected">全部时间</option>
+                                <option value="01">2016年</option>
+                                <option value="02">2014年</option>
+                                <option value="03">2013年</option>
+                                <option value="04">2012年</option>
+                                <option value="05">2014年</option>
+                            </select>
+                        </div>
+                        <div class="hjyf">
+                            <em>合计运费:</em>
+                            <input type="text" id="yunfei"/>
+                        </div>
+                        <div class="yunfzf">
+                            <em>运费支付:</em>
+                            <select name="yunfzf1" id="yunfzf">
+                                <option value="" selected="selected">全部时间</option>
+                                <option value="01">2016年</option>
+                                <option value="02">2014年</option>
+                                <option value="03">2013年</option>
+                                <option value="04">2012年</option>
+                                <option value="05">2014年</option>
+                            </select>
+                        </div>
+                        <div class="youhq">
+                            <em>优惠券:</em>
+                            <select name="youhq1" id="youhq">
+                                <option value="" selected="selected">全部时间</option>
+                                <option value="01">2016年</option>
+                                <option value="02">2014年</option>
+                                <option value="03">2013年</option>
+                                <option value="04">2012年</option>
+                                <option value="05">2014年</option>
+                            </select>
+                            <small>平台通用&nbsp;&nbsp;&nbsp;&nbsp;省￥5,00.00元</small>
+                        </div>
+                        <p class="shif">实付:<i>￥4,322.00元</i><b></b></p>
+                    </form>
                 </div>
             </div>
-        </div>
-
+        </div><!--sure end-->
+        <div class="qujies"><!--qujies begin-->
+            <div>
+                <p>优惠总额度:<span>￥12,000,000.00</span></p>
+                <p>实付款:<i>￥22,000,000.00</i></p>
+                <em>提交采购单</em>
+            </div>
+            <a href="javascript:;" target="_blank">返回进货单修改</a>
+        </div><!--qujies end-->
     </div>
     <!--conten end-->
 </div>

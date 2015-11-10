@@ -1,14 +1,16 @@
+body{
+    background: #f3f3f3;
+}
+
 .wrap {
     width: 100%;
     height: auto;
     background: #f3f3f3;
-    overflow: hidden;
 }
 
 .content {
     width: 1000px;
     height: auto;
-    overflow: hidden;
     margin: 0 auto 58px;
 }
 
@@ -202,39 +204,135 @@
 
 .fpiao {
     width: 100%;
-    height: 90px;
+    height: auto;
+    overflow: hidden;
     background: #fff;
 }
 
-.fpiao a {
+.fpiao p{
+    width: 100%;
+    height: 90px;
+}
+
+.fpiao p a {
     border: #ccc 1px solid;
     display: inline-block;
-    width: 126px;
-    height: 43px;
-    line-height: 43px;
+    width: 124px;
+    height: 41px;
+    line-height: 41px;
     text-align: center;
     font-size: 14px;
     color: #666;
     margin: 23px 0 0 29px;
 }
 
-.fpiao a.fpactive {
+.fpiao p a.fpactive {
     background: url("../images/fp.png") no-repeat;
+    border: 0;
+    width: 126px;
+    height: 43px;
+    line-height: 43px;
+}
+
+.fpiao p a.fpactive:hover {
+    border: none;
+    width: 126px;
+    height: 43px;
+    line-height: 43px;
+}
+
+.fpiao p a:hover {
+    border: #069 2px solid;
+    width: 122px;
+    height: 39px;
+    line-height: 39px;
+}
+
+.fpiao div.hide{
+    display: none;
+}
+
+.zengzs,.creatzzs,.ptfapiao,.creatpt{
+    width: 588px;
+    height: 356px;
+    margin-left: 48px;
+}
+
+.ptfapiao,.creatpt{
+    margin-left: 0;
+    height: 124px;
+}
+
+.zengzs p,.creatzzs p,.ptfapiao p,.creatpt p{
+    width: 100%;
+    height: 32px;
+    margin-bottom: 16px;
+}
+
+.zengzs p em,.creatzzs p em,.ptfapiao p em,.creatpt p em{
+    width: 110px;
+    height: 32px;
+    line-height: 32px;
+    text-align: right;
+    display: inline-block;
+    color: #666;
+}
+
+.zengzs p em i{
+    color: #c00;
+    width: 6px;
+    height: 6px;
+}
+
+.zengzs p input,.creatzzs p span,.ptfapiao p input,.creatpt p span{
+    width: 438px;
+    height: 30px;
+    line-height: 30px;
+    border:#cecece 1px solid;
+    padding: 0 10px;
+    margin-left: 18px;
+    font-size: 14px;
+    color: #666;
+}
+
+.creatzzs p span,.creatpt p span{
+    height: 32px;
+    line-height: 32px;
     border: 0;
 }
 
-.fpiao a.fpactive:hover {
-    border: none;
+.zengzs a,.creatzzs a,.ptfapiao a,.creatpt a{
+    display: block;
+    float: left;
+    width: 86px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 3px;
+    color: #fff;
 }
 
-.fpiao a:hover {
-    border: #069 1px solid;
+.zengzs a.baocun,.creatzzs a.baocun,.ptfapiao a.baocun,.creatpt a.baocun{
+    background: #008bd1;
+    margin: 0 16px 0 128px;
+}
+
+.zengzs a.baocun:hover,.creatzzs a.baocun:hover,.ptfapiao a.baocun:hover,.creatpt a.baocun:hover{
+    background: #c00;
+}
+
+.zengzs a.quxiao,.ptfapiao a.quxiao{
+    background: #ccc;
+}
+
+.zengzs a.quxiao:hover,.ptfapiao a.quxiao:hover{
+    background: #929091;
 }
 
 .sure {
     width: 1000px;
     height: auto;
-    overflow: hidden;
     background: #fff;
 }
 
@@ -432,14 +530,15 @@
 
 .liuyan {
     width: 1000px;
-    height: 214px;
+    height: 230px;
     border-top: #eee 2px solid;
 }
 
 .liuyan-left {
     width: 500px;
     float: left;
-    height: 214px;
+    height: 230px;
+    position: relative;
 }
 
 .liuyan-left p {
@@ -457,22 +556,264 @@
     padding: 16px;
     border: #ccc 1px solid;
     color: #ccc;
+    font-size: 12px;
 }
 
+.liuyan-left div {
+    position: absolute;
+    right: 92px;
+    bottom: 54px;
+    font-size: 12px;
+    color: #ccc;
+    width: 352px;
+    background: #fff;
+    text-align: right;
+}
 
+.liuyan-right{
+    width:450px;
+    height: 202px;
+    float: left;
+    padding: 32px 50px 0 0;
+}
 
+.fhuofs{
+    width: 190px;
+    height: 32px;
+    float: left;
+    margin-bottom: 6px;
+}
 
+.fhuofs select{
+    display: none;
+}
 
+.fhuofs em,.hjyf em,.yunfzf em,.youhq em{
+    width: 64px;
+    height: 32px;
+    line-height: 32px;
+    text-align: right;
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+    padding-right: 22px;
+    float: left;
+}
 
+.hjyf{
+    width: 186px;
+    float: right;
+    margin-bottom: 6px;
+}
 
+.hjyf input{
+    display: inline-block;
+    float: left;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 7px;
+    border: #e8e6e6 1px solid;
+}
 
+.yunfzf{
+    width: 190px;
+    margin-bottom: 6px;
+}
 
+.yunfzf select{
+    display: none;
+}
 
+.youhq{
+    width: 450px;
+    float: left;
+    height: auto;
+    margin-bottom: 6px;
 
+}
 
+.youhq select{
+    height: 30px;
+    width: 360px;
+    display: none;
+}
 
+.youhq small{
+    font-size: 12px;
+    color: #c00;
+    display: block;
+    width: 430px;
+    text-align: right;
+    padding:6px 0 0 10px;
+}
 
+.shif{
+    width: 445px;
+    height: auto;
+    text-align: right;
+    font-size: 14px;
+    color: #333;
+    margin-top: 70px;
+}
 
+.shif i{
+    color: #c00;
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+.shif b{
+    font-weight: normal;
+    font-size: 12px;
+    color: #999;
+    display: block;
+    width: 445px;
+    margin-top: 8px;
+}
+
+/*确认采购信息部分自定义下拉样式开始*/
+.my-select {
+    position: relative;
+    display: inline-block;
+    width: 95px;
+    height: 30px;
+    border: 1px solid #d5d5d5;
+    padding-left: 0;
+    font-size: 14px;
+    color: #666;
+    *left:60px;
+    *top: -20px;
+    -left:60px;
+    -top: -20px;
+    *clear:both;
+    _celar:both;
+    *margin-top: -10px;
+    _margin-top: -10px;
+    *margin-left: 15px;
+    _margin-left: 15px;
+}
+
+.my-select span {
+    display: block;
+    width: 83px;
+    height: 30px;
+    padding-left: 12px;
+    line-height: 30px;
+    text-align: left;
+    z-index: 990;
+    background: url("http://172.16.254.31:12010/zixun/images/icon.png") no-repeat 78px -516px;
+}
+
+.my-select ul {
+    display: none;
+    position: absolute;
+    left: -1px;
+    top: 30px;
+    width: 95px;
+    overflow: hidden;
+    border: 1px solid #d5d5d5;
+    background: #fff;
+    z-index: 999;
+}
+
+.my-select ul li {
+    width: 83px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 12px;
+    margin-bottom: -1px;
+    text-align: left;
+}
+
+.my-select ul li:hover {
+    background: #069;
+    cursor: pointer;
+    color: #fff;
+}
+
+.youhq div.my-select{
+    height: 30px;
+    width: 360px;
+}
+
+.youhq div.my-select span{
+    width: 360px;
+    background: url("http://172.16.254.31:12010/zixun/images/icon.png") no-repeat 340px -516px;
+}
+
+.youhq div.my-select ul{
+    width: 360px;
+}
+
+.youhq div.my-select ul li{
+    width: 360px;
+}
+
+/*确认采购信息部分自定义下拉样式结束*/
+
+.qujies{
+    width: 1000px;
+    background: #fff;
+    height: 75px;
+    border-top: #069 3px solid;
+    padding: 40px 0 55px 0;
+}
+
+.qujies div{
+    height: 74px;
+    background: #ddd;
+    border-bottom: #c8c8c8 1px solid;
+    padding-left: 300px;
+}
+
+.qujies p{
+    width: 270px;
+    height: 74px;
+    line-height: 74px;
+    float: left;
+    font-size: 14px;
+    color: #333;
+}
+
+.qujies p span{
+    font-size: 18px;
+    color: #c00;
+}
+
+.qujies p i{
+    font-size: 24px;
+    color: #c00;
+}
+
+.qujies a{
+    display: block;
+    width: 100%;
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+    color: #069;
+    margin-top: 8px;
+    padding-right: 28px;
+    text-align: right;
+    width: 970px;
+}
+
+.qujies div em{
+    display: block;
+    float: left;
+    width: 160px;
+    height: 74px;
+    line-height: 74px;
+    text-align: center;
+    color: #fff;
+    background: #c00;
+    font-size: 22px;
+}
+
+.qujies div em:hover{
+    cursor: pointer;
+}
 
 
 
