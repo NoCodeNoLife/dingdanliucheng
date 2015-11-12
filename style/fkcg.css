@@ -1,0 +1,164 @@
+.wrap{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #f3f3f3;
+}
+
+/****付款成功样式开始****/
+.fkcg,.shibai{
+    width: 638px;
+    height: 382px;
+    padding-left: 362px;
+    background: url("../images/success.png") no-repeat 216px 72px #fff;
+    margin: 60px auto;
+}
+
+.shibai{
+    height: 448px;
+    background: url("../images/fksb.png") no-repeat 216px 72px #fff;
+}
+
+.fkcg h3,.shibai h3{
+    font-size: 24px;
+    font-weight: normal;
+    color: #333;
+    padding: 102px 0 42px 0;
+}
+
+.fkcg small,.shibai small{
+    font-size: 16px;
+    color: #666;
+    display: block;
+    width: 262px;
+    text-align: left;
+    height: 18px;
+    line-height: 18px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.fkcg small em,.shibai small em{
+    color: #c00;
+}
+
+.fkcg p,.shibai p{
+    width: 100%;
+    clear: both;
+    color: #999;
+    margin-bottom: 52px;
+}
+
+.fkcg a.chakan{
+    width: 140px;
+    height: 30px;
+    color: #fff;
+    background: #069;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+    float: left;
+    margin-right: 30px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.shibai a.cxzfu{
+    width: 98px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #069;
+    color: #fff;
+    font-size: 12px;
+    color: #fff;
+    display: block;
+    border-radius: 3px;
+    float: left;
+    margin-right: 20px;
+}
+
+.shibai a.cxzfu:hover{
+    background: #c00;
+}
+
+.shibai a.chakan{
+    width: 112px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #f7f7f7;
+    color: #666;
+    font-size: 14px;
+    border: #ddd 1px solid;
+    border-radius: 3px;
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+
+.fkcg a.chakan:hover{
+    background: #c00;
+}
+
+.fkcg a.jixu,.shibai a.jixu{
+    font-size: 12px;
+    color: #069;
+    height: 32px;
+    line-height: 32px;
+}
+
+.fkcg a.jixu:hover,.shibai a.jixu:hover{
+    color: #c00;
+}
+/****付款成功样式结束****/
+
+.shibai div{
+    width: 638px;
+    height: auto;
+    margin-top: 36px;
+}
+
+.shibai div small{
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

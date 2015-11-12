@@ -200,14 +200,14 @@ window.onload = function () {
     //textarea输入字数提示和限制
     (function () {
 
-        function txtTip(id1, id2) {
-            var oTxt = document.getElementById(id1);
+
+            var oTxt = document.getElementById('txt1');
 
             oTxt.onkeyup = function () {
                 var maxChars = 200;//最多字符数
                 if (oTxt.value.length > maxChars)  oTxt.value = oTxt.value.substring(0, maxChars);
                 var curr = maxChars - oTxt.value.length;
-                document.getElementById(id2).innerHTML = curr.toString();
+                document.getElementById('txtnum1').innerHTML = curr.toString();
             };
 
             oTxt.onfocus = function () {
@@ -223,10 +223,7 @@ window.onload = function () {
                     this.innerHTML = '可以告诉供应商留言你的特殊要求例如：您期望的商品到货时间等信息！';
                 }
             }
-        }
 
-        txtTip('txt', 'txtnum');
-        txtTip('txt1', 'txtnum1');
     })();
 
     //订单数量增减

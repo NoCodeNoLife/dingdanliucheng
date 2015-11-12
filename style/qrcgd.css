@@ -359,6 +359,21 @@ body{
     width: 1000px;
     height: 154px;
     background: #fff;
+    position: relative;
+}
+
+.surelist i.pai{
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    left: 34px;
+    top:28px;
+    background: #468e3d;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 3px;
 }
 
 .list-left {
@@ -799,6 +814,10 @@ body{
     width: 970px;
 }
 
+.qujies a:hover{
+    color: #c00;
+}
+
 .qujies div em{
     display: block;
     float: left;
@@ -813,23 +832,288 @@ body{
 
 .qujies div em:hover{
     cursor: pointer;
+    background: #f95a5a;
+}
+
+.maskwrap{
+    width: 100%;
+    background: #000;
+    opacity: 0.4;
+    fliter: alpha(opacity:0.4);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 998;
+}
+
+.mask-main{
+    z-index: 999;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 670px;
+    height: 388px;
+    margin: -193px 0 0 -335px;
+    background: #fff;
+    display: none;
+}
+
+.mask-main div{
+    height: 44px;
+    border-bottom: #d4d4d4 1px solid;
+    line-height: 44px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.mask-main div h5{
+    border-bottom: #069 2px solid;
+    height: 43px;
+    line-height: 43px;
+    width: 168px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    font-weight: normal;
+    float: left;
+}
+
+.mask-main div small{
+    display: block;
+    float: right;
+    width: 13px;
+    height: 13px;
+    margin: 15px 15px 0 0;
+    background: url("../images/closezs.png") no-repeat;
+}
+
+.mask-main div small:hover{
+    cursor: pointer;
+}
+
+.mask-main p{
+    width: 100%;
+    height: 32px;
+    margin-bottom: 16px;
+}
+
+.mask-main p.shoujh{
+    width: 306px;
+    float: left;
+}
+
+.mask-main p.guddh{
+    width: 290px;
+    float: left;
+}
+
+.mask-main p.guddh em{
+    width: 100px;
+}
+
+.mask-main p em{
+    width: 118px;
+    display: block;
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    text-align: right;
+}
+
+.mask-main p em i{
+    color: #c00;
+}
+
+.mask-main p input{
+    display: block;
+    float: left;
+    height: 30px;
+    border: #d4d4d4 1px solid;
+    padding: 0 10px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #333;
+}
+
+.mask-main p input.shr{
+    width: 190px;
+}
+
+.mask-main p input.xxdz{
+    width: 454px;
+}
+
+.mask-main p input.sjh{
+    width: 164px;
+}
+
+.mask-main p input.gddh{
+    width: 166px;
+}
+
+.mask-main p input.yb{
+    width: 164px;
+}
+
+.mask-main  select{
+    display: none;
+    float: left;
+}
+
+.mask-main a.baocundz{
+    width: 123px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    background: #069;
+    display: block;
+    margin: 62px 0 0 118px;
+    _margin: 22px 0 0 118px;
+    *margin: 22px 0 0 118px;
+    border-radius: 3px;
+    clear: both;
+}
+
+.mask-main a:hover{
+    background: #c00;
+}
+
+.mask-main-remove {
+    width: 398px;
+    height: 196px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -98px 0 0 -199px;
+    background: #fff;
+    z-index: 999;
+    font-size: 12px;
+    display: none;
+}
+
+.mask-main-remove div {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: #d3d3d3 1px solid;
+}
+
+.mask-main-remove div h4 {
+    width: 104px;
+    float: left;
+    border-bottom: #069 2px solid;
+    height: 40px;
+    text-align: center;
+    color: #333;
+    font-weight: normal;
+}
+
+.mask-main-remove div span {
+    display: block;
+    float: right;
+    width: 16px;
+    height: 16px;
+    background: url("../images/closezs.png") no-repeat;
+    margin: 20px;
+}
+
+.mask-main-remove div span:hover {
+    cursor: pointer;
+}
+
+.mask-main-remove p {
+    margin: 36px 0 44px 0;
+    width: 370px;
+    padding-left: 28px;
+    color: #666;
+    font-size: 14px;
+    display: block;
+}
+
+.mask-main-remove a {
+    display: block;
+    background: #008ad2;
+    color: #fff;
+    text-align: center;
+    width: 86px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    margin: 0 22px 0 172px;
+    border-radius: 5px;
+}
+
+.mask-main-remove a:hover {
+    background: #c00;
+}
+
+.mask-main-remove em {
+    float: left;
+    color: #016797;
+    height: 30px;
+    line-height: 30px;
+}
+
+.mask-main-remove em:hover {
+    cursor: pointer;
+    color: #c00;
 }
 
 
 
+/**新增收货地址下拉样式开始**/
+.mask-main div.xinengdizhi {
+    position: relative;
+    display: inline-block;
+    width: 95px;
+    height: 30px;
+    border: 1px solid #d4d4d4;
+    padding-left: 0;
+    font-size: 14px;
+    color: #333;
+    margin-right: 16px;
+    _float: left;
+    *float: left;
+}
 
+.mask-main div.xinengdizhi span {
+    display: block;
+    width: 95px;
+    height: 30px;
+    padding-left: 12px;
+    line-height: 30px;
+    text-align: left;
+    background: url("http://172.16.254.31:12010/zixun/images/icon.png") no-repeat 76px -516px;
+}
 
+.mask-main div.xinengdizhi ul {
+    display: none;
+    position: absolute;
+    left: -1px;
+    top: 30px;
+    width: 95px;
+    overflow: hidden;
+    border: 1px solid #d5d5d5;
+    background: #fff;
+    z-index: 999;
+}
 
+.mask-main div.xinengdizhi ul li {
+    width: 95px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 12px;
+    margin-bottom: -1px;
+    text-align: left;
+}
 
-
-
-
-
-
-
-
-
-
+.mask-main div.xinengdizhi ul li:hover {
+    background: #069;
+    cursor: pointer;
+    color: #fff;
+}
+/**新增收货地址下拉样式结束**/
 
 
 

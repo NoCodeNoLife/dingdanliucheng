@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>二次支付-默认状态</title>
+    <link rel="stylesheet" href="style/global.css"/>
+    <link rel="stylesheet" href="style/ercizhifu.css"/>
+</head>
+<body>
+<div class="topzs"><!-- topzs begin-->
+    <div class="topzs-main">
+        <div class="topzs-step">
+            <a href="#" title="" target="_blank">
+                <img src="images/logo1.png" alt=""/>
+            </a>
+
+            <h3>我的包谷</h3>
+            <ul>
+                <li>下单</li>
+                <li class="active-zs">支付</li>
+                <li>收货</li>
+            </ul>
+        </div>
+        <p><a href="#">首页</a> >> 确认采购单</p>
+    </div>
+</div>
+<!--topzs end-->
+<div class="wrap"><!--wrap begin-->
+    <div class="success"><!--success begin-->
+        <h5>采购单提交成功！</h5>
+        <span>应付：<strong>￥38862.50</strong></span>
+        <p>请您在提交采购单后<i>48</i>小时<em>(截止:2015年8月15日09:09:09)</em>内完成支付，否则采购单会自动取消。</p>
+    </div><!--success end-->
+    <hr class="linear"/>
+    <div class="main"><!--main begin-->
+        <div class="subnav" id="subnav">
+            <span class="active">立即支付</span>
+            <span>融资支付</span>
+        </div>
+        <div class="zhifu hide" id="zhifu" style="display: block"><!--zhifu begin-->
+            <p>通过企业网银支付：<em>(需要开通网上银行)</em></p>
+            <strong><span><img src="images/jsyh.png" alt=""/></span><small>更换银行卡</small></strong>
+            <ul class="qyzf">
+                <li><img src="images/nyyh.png" alt=""/></li>
+                <li><img src="images/zgyh.png" alt=""/></li>
+                <li><img src="images/zsyh.png" alt=""/></li>
+                <li><img src="images/gsyh.png" alt=""/></li>
+            </ul>
+            <p>通过个人网银支付：<em>(需要开通网上银行)</em></p>
+            <strong><span><img src="images/jsyh.png" alt=""/></span><small>更换银行卡</small></strong>
+            <ul class="grzf">
+                <li><img src="images/zsyh.png" alt=""/></li>
+                <li><img src="images/gsyh.png" alt=""/></li>
+                <li><img src="images/payh.png" alt=""/></li>
+                <li><img src="images/msyh.png" alt=""/></li>
+                <li><img src="images/xyyh.png" alt=""/></li>
+                <li><img src="images/nyyh.png" alt=""/></li>
+                <li><img src="images/gfyh.png" alt=""/></li>
+                <li><img src="images/bjyh.png" alt=""/></li>
+                <li><img src="images/yzyh.png" alt=""/></li>
+                <li><img src="images/hxyh.png" alt=""/></li>
+                <li><img src="images/jtyh.png" alt=""/></li>
+                <li><img src="images/pfyh.png" alt=""/></li>
+                <li><img src="images/gdyh.png" alt=""/></li>
+                <li><img src="images/nsyh.png" alt=""/></li>
+                <li><img src="images/bhyh.png" alt=""/></li>
+                <li><img src="images/zxyh.png" alt=""/></li>
+                <li><img src="images/zgyh.png" alt=""/></li>
+                <li><img src="images/syyh.png" alt=""/></li>
+            </ul>
+            <input type="button" value="支付" id="pay"/>
+        </div><!--zhifu end-->
+        <div class="rongzi hide"><!--rongzi begin-->
+            <p>您还没有进行实名认证，实名认证后方可借款。</p>
+            <a href="javascript:;">实名认证</a>
+        </div><!--rongzi end-->
+    </div><!--main end-->
+</div><!--wrap end-->
+<div class="zhifumask" id="zhifumask"></div>
+<div class="zhifu-mask" id="zfmask"><!--zhifu-mask-main main-->
+    <p><span>支付提醒</span></p>
+    <div>
+        <strong>请您在打开的网银职业面完成支付<br/>付款完成钱请不要关闭本窗口</strong>
+        <small>完成付款后请根据您的情况点击下面的按钮：</small>
+        <a href="javascript:;" class="wcheng" id="wczhifu">完成付款</a>
+        <a href="javascript:;" class="wenti">付款遇到问题</a>
+        <a href="javascript:;" class="back"><<返回选择其它方式付款 </a>
+    </div>
+</div><!--zhifu-mask-main end-->
+<script src="javascript/getByClass.js"></script>
+<script src="javascript/ercizhifu.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

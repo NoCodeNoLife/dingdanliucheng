@@ -1,0 +1,371 @@
+.wrap {
+    width: 100%;
+    height: auto;
+    background: #f3f3f3;
+    padding-bottom: 52px;
+}
+
+.success {
+    width: 786px;
+    height: 168px;
+    margin: 0 auto;
+    padding-left: 214px;
+    color: #333;
+    font-size: 14px;
+    background: url("../images/success.png") no-repeat 72px 18px;
+}
+
+.success h5 {
+    font-size: 18px;
+    font-weight: normal;
+    padding: 46px 0 14px 0;
+}
+
+.success span {
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #333;
+}
+
+.success strong {
+    font-weight: normal;
+    font-size: 24px;
+    color: #c00;
+}
+
+.success p {
+    margin-top: 10px;
+}
+
+.success i {
+    color: #c00;
+}
+
+.success em {
+    color: #999;
+}
+
+hr.linear {
+    border: none;
+    display: block;
+    width: 1010px;
+    height: 6px;
+    border-radius: 5px;
+    background: #66bbe6;
+    margin: 0 auto;
+}
+
+.main {
+    width: 964px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 18px;
+    background: #fff;
+}
+
+.subnav {
+    padding-top: 38px;
+    height: 45px;
+    line-height: 35px;
+    width: 910px;
+    padding-left: 54px;
+    border-bottom: #e6e5e5 1px solid;
+}
+
+.subnav span {
+    width: 103px;
+    height: 45px;
+    line-height: 45px;
+    display: block;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+}
+
+.subnav span.active {
+    border-bottom: #069 2px solid;
+    color: #069;
+}
+
+.main div.hide {
+    display: none;
+}
+
+.zhifu {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 14px;
+}
+
+.zhifu p {
+    width: 910px;
+    padding-left: 53px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    color: #333;
+    clear: both;
+}
+
+.zhifu p em {
+    color: #999;
+}
+
+.zhifu ul {
+    padding-left: 53px;
+    width: 910px;
+    height: auto;
+    overflow: hidden;
+    display: none;
+}
+
+.zhifu strong{
+    font-weight: normal;
+    display: block;
+    padding-left: 53px;
+    height: 52px;
+}
+
+.zhifu ul.qyzf {
+    margin-bottom: 20px;
+}
+
+.zhifu ul.grzf {
+    border-bottom: #e6e5e5 1px solid;
+    padding-bottom: 20px;
+}
+
+.zhifu ul li,.zhifu span {
+    width: 177px;
+    height: 50px;
+    border: #d2d1d1 1px solid;
+    float: left;
+    overflow: hidden;
+    margin: 0 42px 22px 0;
+}
+
+.zhifu span{
+    display: block;
+}
+
+.zhifu strong small{
+    line-height: 52px;
+    height: 52px;
+    color: #069;
+    font-size: 14px;
+}
+
+.zhifu strong small:hover{
+    cursor: pointer;
+}
+
+.zhifu li img,.zhifu span img {
+    display: block;
+    margin: 2px;
+    width: 173px;
+    height: 46px;
+    margin: 2px;
+}
+
+.zhifu ul li:hover {
+    border: #f93 3px solid;
+    width: 173px;
+    height: 46px;
+}
+
+.zhifu ul li:hover img {
+    margin: 0;
+}
+
+.zhifu ul li.liactive {
+    background: url("../images/arr.png") no-repeat 159px 32px;
+    border: #f93 3px solid;
+    width: 173px;
+    height: 46px;
+}
+
+.zhifu ul li.liactive img {
+    margin: 0;
+}
+
+.zhifu input {
+    width: 150px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    background: #ccc;
+    display: block;
+    border-radius: 3px;
+    margin: 28px 0 28px 53px;
+    border: 0;
+}
+
+.zhifu input.jihuo {
+    background: #069;
+    cursor: pointer;
+}
+
+.rongzi {
+    width: 100%;
+    height: 278px;
+}
+
+.rongzi p {
+    margin-top: 22px;
+    font-size: 14px;
+    color: #666;
+    padding: 28px 0 28px 53px;
+}
+
+.rongzi a {
+    width: 106px;
+    height: 32px;
+    background: #069;
+    color: #fff;
+    line-height: 32px;
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    border-radius: 3px;
+    margin-left: 53px;
+}
+
+/*支付成功弹窗样式*/
+.zhifumask {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: .4;
+    fliter: alpha(opacity:.4);
+    z-index: 900;
+    display: none;
+}
+
+.zhifu-mask {
+    width: 670px;
+    height: 434px;
+    background: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -217px 0 0 -335px;
+    z-index: 999;
+    display: none;
+}
+
+.zhifu-mask p {
+    height: 43px;
+    line-height: 43px;
+    width: 100%;
+    border-bottom: #d4d4d4 1px solid;
+}
+
+.zhifu-mask p span {
+    display: block;
+    width: 118px;
+    height: 43px;
+    border-bottom: #069 2px solid;
+    text-align: center;
+    line-height: 43px;
+    font-size: 16px;
+    color: #333;
+}
+
+.zhifu-mask div {
+    padding: 80px 0 0 170px;
+    width: 500px;
+}
+
+.zhifu-mask div strong {
+    font-weight: normal;
+    font-size: 20px;
+    color: #333;
+    display: block;
+    margin-bottom: 64px;
+}
+
+.zhifu-mask div small {
+    font-size: 16px;
+    color: #666;
+    display: block;
+    margin-bottom: 18px;
+}
+
+.zhifu-mask a.wcheng {
+    display: block;
+    background: #069;
+    color: #fff;
+    width: 96px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 32px;
+}
+
+.zhifu-mask a.wcheng:hover {
+    background: #c00;
+    color: #fff;
+}
+
+.zhifu-mask a.wenti {
+    font-size: 14px;
+    color: #666;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+.zhifu-mask a.back {
+    font-size: 14px;
+    color: #069;
+    display: block;
+    width: 550px;
+    clear: both;
+}
+
+.zhifu-mask a:hover {
+    color: #c00;
+}
+
+/*支付成功弹窗样式*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
