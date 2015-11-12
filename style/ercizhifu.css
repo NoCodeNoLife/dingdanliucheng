@@ -121,6 +121,15 @@ hr.linear {
     display: none;
 }
 
+.zhifu ul li {
+    width: 177px;
+    height: 50px;
+    border: #d2d1d1 1px solid;
+    float: left;
+    overflow: hidden;
+    margin: 0 42px 22px 0;
+}
+
 .zhifu strong{
     font-weight: normal;
     display: block;
@@ -211,17 +220,19 @@ hr.linear {
 
 .rongzi {
     width: 100%;
-    height: 278px;
+    height: 310px;
+    display: none;
+    padding-bottom: 102px;
 }
 
-.rongzi p {
+.rongzi div.shimrz p,.rongzibili p {
     margin-top: 22px;
     font-size: 14px;
     color: #666;
     padding: 28px 0 28px 53px;
 }
 
-.rongzi a {
+.rongzi div.shimrz a,.rongzibili div a {
     width: 106px;
     height: 32px;
     background: #069;
@@ -232,6 +243,38 @@ hr.linear {
     display: block;
     border-radius: 3px;
     margin-left: 53px;
+}
+
+.rongzibili div a.rongzi-btn:hover{
+    background: #c00;
+}
+.rongzibili select {
+    display: none;
+}
+
+.rongzibili div {
+    font-size: 14px;
+    color: #666;
+    padding-left: 53px;
+}
+
+.rongzibili div span{
+    padding-left: 20px;
+}
+
+.rongzibili div strong{
+    font-weight: normal;
+    color: #c00;
+    font-size: 16px;
+}
+
+.rongzibili div a.rongzi-btn{
+    margin: 42px 0 0 0;
+    width: 150px;
+    height: 44px;
+    line-height: 44px;
+    background: #069;
+    font-size: 18px;
 }
 
 /*支付成功弹窗样式*/
@@ -338,6 +381,57 @@ hr.linear {
 
 /*支付成功弹窗样式*/
 
+/*预付款比例下拉样式开始*/
+.rongzibili div.scale {
+    position: relative;
+    display: inline-block;
+    width: 82px;
+    height: 30px;
+    border: 1px solid #d5d5d5;
+    padding-left: 0;
+    font-size: 14px;
+    color: #666;
+    margin-left: 10px;
+}
+
+.scale span {
+    display: block;
+    width: 82px;
+    height: 30px;
+    padding-left: 12px;
+    line-height: 30px;
+    text-align: left;
+    background: url("http://172.16.254.31:12010/zixun/images/icon.png") no-repeat 64px -516px;
+}
+
+.scale ul {
+    display: none;
+    position: absolute;
+    left: -1px;
+    top: 30px;
+    width: 82px;
+    overflow: hidden;
+    border: 1px solid #d5d5d5;
+    background: #fff;
+    z-index: 999;
+}
+
+.scale ul li {
+    width: 124px;
+    height: 23px;
+    line-height: 23px;
+    padding-left: 12px;
+    margin-bottom: -1px;
+    text-align: left;
+}
+
+.scale ul li:hover {
+    background: #069;
+    cursor: pointer;
+    color: #fff;
+}
+
+/*预付款比例下拉样式结束*/
 
 
 

@@ -2,26 +2,27 @@
  * Created by zhaoshuai on 2015/11/12.
  */
 window.onload = function(){
-    //更换银行卡
-    (function(){
-        var oBox = document.getElementById('zhifu');
-        var ghBtn = oBox.getElementsByTagName('small');
-        var aUl = oBox.getElementsByTagName('ul');
 
-        for(var i=0;i<ghBtn.length;i++){
-            ghBtn[i].index = i;
-            ghBtn[i].onclick = function(){
-                aUl[this.index].style.display = 'block';
-            }
-        }
-    })();
-
-    //选中银行卡
-    (function(){
+    //立即支付和融资支付切换
+    (function () {
+        var SubNav = document.getElementById('subnav');
+        var aBtn = SubNav.getElementsByTagName('span');
+        var aDiv = getByClass(document, 'hide');
         var zhiFu = document.getElementById('zhifu');
         var aLi = zhiFu.getElementsByTagName('li');
         var oPay = document.getElementById('pay');
 
+        for (var i = 0; i < aBtn.length; i++) {
+            aBtn[i].index = i;
+            aBtn[i].onclick = function () {
+                for (var i = 0; i < aBtn.length; i++) {
+                    aBtn[i].className = '';
+                    aDiv[i].style.display = 'none';
+                }
+                this.className = 'active';
+                aDiv[this.index].style.display = 'block';
+            }
+        }
 
         for (var i = 0; i < aLi.length; i++) {
             aLi[i].onclick = function () {
@@ -37,6 +38,21 @@ window.onload = function(){
                 }
             }
 
+        }
+
+    })();
+
+    //更换银行卡
+    (function(){
+        var oBox = document.getElementById('zhifu');
+        var ghBtn = oBox.getElementsByTagName('small');
+        var aUl = oBox.getElementsByTagName('ul');
+
+        for(var i=0;i<ghBtn.length;i++){
+            ghBtn[i].index = i;
+            ghBtn[i].onclick = function(){
+                aUl[this.index].style.display = 'block';
+            }
         }
     })();
 
@@ -60,4 +76,45 @@ window.onload = function(){
         }
 
     })();
+
+    //预付款比例下拉
+    (function(){
+        function mySelect (name) {
+            var oSelect = document.getElementsByName(name)[0];
+            //创建元素
+            var oDiv = document.createElement("div");
+            oDiv.className = "scale";
+            oSelect.parentNode.insertBefore(oDiv, oSelect);
+
+            var oSpan = document.createElement("span");
+            oSpan.innerHTML = oSelect.options[oSelect.selectedIndex].text;
+            oDiv.appendChild(oSpan);
+
+            oDiv.onmouseover = function () {
+                oUl.style.display = "block";
+            };
+            oDiv.onmouseout = function () {
+                oUl.style.display = "none";
+            };
+            var oUl = document.createElement("ul");
+            oDiv.appendChild(oUl);
+            //li
+            for (var i = 0; i < oSelect.options.length; i++) {
+                var oLi = document.createElement("li");
+                oLi.innerHTML = oSelect.options[i].text;
+                oUl.appendChild(oLi);
+
+                (function (index) {
+                    oLi.onclick = function () {
+                        oSpan.innerHTML = this.innerHTML;
+                        oUl.style.display = "none";
+                        oSelect.selectedIndex = index;
+                    };
+                })(i);
+            }
+        }
+
+        mySelect('scale');
+
+    })()
 }

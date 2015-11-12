@@ -71,8 +71,26 @@
             <input type="button" value="支付" id="pay"/>
         </div><!--zhifu end-->
         <div class="rongzi hide"><!--rongzi begin-->
-            <p>您还没有进行实名认证，实名认证后方可借款。</p>
-            <a href="javascript:;">实名认证</a>
+            <div class="shimrz">
+                <p>您还没有进行实名认证，实名认证后方可借款。</p>
+                <a href="javascript:;">实名认证</a>
+            </div>
+            <div class="rongzibili"><!--rongzibili begin-->
+                <p>需要您先支付预付款，剩余金额方可申请借款支付。</p>
+                <div>预付款金额：采购单总额的
+                    <select name="scale" class="all-time">
+                        <option value="" selected="selected">20%</option>
+                        <option value="01">30%</option>
+                        <option value="02">40%</option>
+                        <option value="03">50%</option>
+                        <option value="04">60%</option>
+                        <option value="05">70%</option>
+                        <option value="05">80%</option>
+                    </select>
+                    <span>合计:<strong>￥1.123.105.00</strong></span>
+                    <a href="javascript:;" class="rongzi-btn">支付</a>
+                </div>
+            </div><!--rongzibili end-->
         </div><!--rongzi end-->
     </div><!--main end-->
 </div><!--wrap end-->
