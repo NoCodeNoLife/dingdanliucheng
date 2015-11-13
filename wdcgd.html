@@ -5,6 +5,7 @@
     <title>我的采购单</title>
     <link rel="stylesheet" href="style/global.css"/>
     <link rel="stylesheet" href="style/wdcgd.css"/>
+    <link rel="stylesheet" href="style/libs/daterangepicker.css"/>
 </head>
 <body>
 <!--nav 可以做为公共导航提取，需要引入nav.css,move.js,nav.js-->
@@ -33,25 +34,97 @@
 <!--nav end-->
 <div class="wrap"><!--wrap begin-->
     <div class="content"><!--content begin-->
-        <div class="content-left"><!--content-left begin-->
+        <div class="content-left" id="ContentLeft"><!--content-left begin-->
             <h3>会员中心</h3>
             <ul>
-                <li>供应产品</li>
-                <li>商铺管理</li>
-                <li>卖家交易管理</li>
-                <li>买家交易管理</li>
-                <li>关注的品牌</li>
-                <li>消息中心</li>
+                <li class="submenu">
+                    <h5>供应产品</h5>
+                    <div style="height: 0">
+                        <a href="javascript:;">已卖出商品</a>
+                        <a href="javascript:;">交易评论</a>
+                        <a href="javascript:;">退款管理</a>
+                        <a href="javascript:;">地址管理</a>
+                        <a href="javascript:;">物流设置</a>
+                        <a href="javascript:;">物流设置</a>
+                        <a href="javascript:;">物流设置</a>
+                        <a href="javascript:;">物流设置</a>
+                    </div>
+                </li>
+                <li class="submenu">
+                    <h5>商铺管理</h5>
+                    <div>
+                        <a href="javascript:;">已卖出商品</a>
+                        <a href="javascript:;">退款管理</a>
+                        <a href="javascript:;">地址管理</a>
+                        <a href="javascript:;">物流设置</a>
+                    </div>
+                </li>
+                <li class="submenu">
+                    <h5>卖家交易管理</h5>
+                    <div>
+                        <a href="javascript:;">已卖出商品</a>
+                        <a href="javascript:;">交易评论</a>
+                        <a href="javascript:;">交易评论</a>
+                        <a href="javascript:;">交易评论</a>
+                        <a href="javascript:;">退款管理</a>
+                        <a href="javascript:;">地址管理</a>
+                        <a href="javascript:;">物流设置</a>
+                    </div>
+                </li>
+                <li class="submenu">
+                    <h5>买家交易管理</h5>
+                    <div>
+                        <a href="javascript:;">已卖出商品</a>
+                        <a href="javascript:;">交易评论</a>
+                        <a href="javascript:;">退款管理</a>
+                        <a href="javascript:;">地址管理</a>
+                        <a href="javascript:;">物流设置</a>
+                    </div>
+                </li>
+                <li class="pinpai"><a href="javascript:;">关注的品牌</a></li>
+                <li class="xiaoxi"><a href="javascript">消息中心</a></li>
             </ul>
         </div><!--content-left end-->
         <div class="conetnt-right"><!--conetnt-right begin-->
-
+            <div class="query"><!--query begin-->
+                <p class="w344">
+                    <input type="text" value="按商品名称/采购单号/供应商名称查询" id="search"/>
+                    <a href="javascript:;">搜索</a>
+                </p>
+                <p>
+                    <small>提交时间</small>
+                    <input type="text" class="w220" id="daterangepicker"/>
+                </p>
+            </div><!--query end-->
+            <div class="right-main"><!--right-main begin-->
+                <div class="right-nav" id="rightnav"><!--riht-nav begin-->
+                    <span>交易中<em>10</em><i>|</i></span>
+                    <span>待付款<em>12</em><i>|</i></span>
+                    <span>待发货<em>8</em><i>|</i></span>
+                    <span>待收货<em>5</em><i>|</i></span>
+                    <span>交易成功<em>5</em><i>|</i></span>
+                    <span>交易关闭<em>5</em><i>|</i></span>
+                    <span>全部<em>10</em></span>
+                    <small id="right-nav-move"></small>
+                </div><!--riht-nav end-->
+            </div><!--right-main end-->
         </div><!--conetnt-right end-->
     </div><!--content end-->
 </div><!--wrap end-->
 <script src="javascript/getByClass.js"></script>
 <script src="javascript/move.js"></script>
 <script src="javascript/nav.js"></script>
+<script src="javascript/libs/jquery-1.11.2.min.js"></script>
+<script src="javascript/libs/moment.min.js"></script>
+<script src="javascript/libs/jquery.daterangepicker.js"></script>
+<script>
+    $('#daterangepicker').dateRangePicker(
+            {
+                separator: ' 至 ',
+                language: 'cn'
+            }
+    );
+</script>
 </body>
 </html>
 
