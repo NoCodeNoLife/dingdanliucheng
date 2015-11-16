@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style/libs/daterangepicker.css"/>
 </head>
 <body>
+<!--此页面已交由贾新龙整合-->
 <!--nav 可以做为公共导航提取，需要引入nav.css,move.js,nav.js-->
 <div class="nav"><!--nav begin-->
     <div class="nav-main" id="nav">
@@ -39,6 +40,7 @@
             <ul>
                 <li class="submenu">
                     <h5>供应产品</h5>
+
                     <div style="height: 0">
                         <a href="javascript:;">已卖出商品</a>
                         <a href="javascript:;">交易评论</a>
@@ -52,6 +54,7 @@
                 </li>
                 <li class="submenu">
                     <h5>商铺管理</h5>
+
                     <div>
                         <a href="javascript:;">已卖出商品</a>
                         <a href="javascript:;">退款管理</a>
@@ -61,6 +64,7 @@
                 </li>
                 <li class="submenu">
                     <h5>卖家交易管理</h5>
+
                     <div>
                         <a href="javascript:;">已卖出商品</a>
                         <a href="javascript:;">交易评论</a>
@@ -73,6 +77,7 @@
                 </li>
                 <li class="submenu">
                     <h5>买家交易管理</h5>
+
                     <div>
                         <a href="javascript:;">已卖出商品</a>
                         <a href="javascript:;">交易评论</a>
@@ -84,18 +89,21 @@
                 <li class="pinpai"><a href="javascript:;">关注的品牌</a></li>
                 <li class="xiaoxi"><a href="javascript">消息中心</a></li>
             </ul>
-        </div><!--content-left end-->
+        </div>
+        <!--content-left end-->
         <div class="conetnt-right"><!--conetnt-right begin-->
             <div class="query"><!--query begin-->
                 <p class="w344">
                     <input type="text" value="按商品名称/采购单号/供应商名称查询" id="search"/>
                     <a href="javascript:;">搜索</a>
                 </p>
+
                 <p>
                     <small>提交时间</small>
                     <input type="text" class="w220" id="daterangepicker"/>
                 </p>
-            </div><!--query end-->
+            </div>
+            <!--query end-->
             <div class="right-main"><!--right-main begin-->
                 <div class="right-nav" id="rightnav"><!--riht-nav begin-->
                     <span>交易中<em>10</em><i>|</i></span>
@@ -106,11 +114,302 @@
                     <span>交易关闭<em>5</em><i>|</i></span>
                     <span>全部<em>10</em></span>
                     <small id="right-nav-move"></small>
-                </div><!--riht-nav end-->
-            </div><!--right-main end-->
-        </div><!--conetnt-right end-->
-    </div><!--content end-->
-</div><!--wrap end-->
+                </div>
+                <!--riht-nav end-->
+                <div class="right-list"><!--right-list begin-->
+                    <div class="list-top">
+                        <span>销售单号：1223146556465</span>
+                        <span>下单时间：2015-07-16 09:52:36</span>
+
+                        <p>
+                            实收:<em>￥11,612,000.00</em>
+                            <i>改价</i>
+                        </p>
+                        <strong>待付款</strong>
+                    </div>
+                    <div class="list-main">
+                        <a href="javascript:;" class="imgzs">
+                            <img src="images/imgzs.png" alt=""/>
+                        </a>
+                        <a href="javascript:;" class="titlezs">
+                            各种淀粉各种牛奶各种欧巴在售各
+                            种淀粉各种牛奶各种欧至三十个字
+                        </a>
+                        <small>12000公斤</small>
+                        <span>￥20,612,000.00</span>
+                        <p>
+                            <strong>截止时间：<em>2015-08-12 09:20:10</em></strong>
+                            <a href="javascript:;" class="chakanzs">查看详情</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="right-list"><!--right-list begin-->
+                    <div class="list-top">
+                        <span>销售单号：1223146556465</span>
+                        <span>下单时间：2015-07-16 09:52:36</span>
+
+                        <p class="lineH">
+                            实收:<em>￥11,612,000.00</em>
+                            <br/>
+                            (含包谷付：10000)
+                        </p>
+                        <strong>待发货</strong>
+                    </div>
+                    <div class="list-main">
+                        <i>团</i>
+                        <a href="javascript:;" class="imgzs">
+                            <img src="images/imgzs.png" alt=""/>
+                        </a>
+                        <a href="javascript:;" class="titlezs">
+                            各种淀粉各种牛奶各种欧巴在售各
+                            种淀粉各种牛奶各种欧至三十个字
+                        </a>
+                        <span class="tkzt">退款待确认</span>
+                        <small>12000公斤</small>
+                        <span>￥20,612,000.00</span>
+                        <p>
+                            <a href="javascript:;" class="fh">发货</a>
+                            <a href="javascript:;" class="chakanzs">查看详情</a>
+                        </p>
+                    </div>
+                    <div class="list-main">
+                        <i>团</i>
+                        <a href="javascript:;" class="imgzs">
+                            <img src="images/imgzs.png" alt="" class="gray"/>
+                        </a>
+                        <a href="javascript:;" class="titlezs colorzs">
+                            各种淀粉各种牛奶各种欧巴在售各
+                            种淀粉各种牛奶各种欧至三十个字
+                        </a>
+                        <span class="tkzt tkcg">退款成功</span>
+                        <small class="colorzs">12000公斤</small>
+                        <span class="colorzs">￥20,612,000.00</span>
+                        <p class="bordertop">
+                        <!--<hr class="white"/>-->
+                            <!--<strong>截止时间：<em>2015-08-12 09:20:10</em></strong>-->
+                            <!--<a href="javascript:;" class="chakanzs">查看详情</a>-->
+                        </p>
+                    </div>
+                </div>
+                <!--right-list end-->
+                <div class="right-list"><!--right-list begin-->
+                    <div class="list-top">
+                        <span>销售单号：1223146556465</span>
+                        <span>下单时间：2015-07-16 09:52:36</span>
+
+                        <p class="lineH">
+                            实收:<em>￥11,612,000.00</em>
+                            <br/>
+                            (含包谷付：10000)
+                        </p>
+                        <strong class="dsh">待收货</strong>
+                    </div>
+                    <div class="list-main">
+                        <a href="javascript:;" class="imgzs">
+                            <img src="images/imgzs.png" alt=""/>
+                        </a>
+                        <a href="javascript:;" class="titlezs tkgb">
+                            各种淀粉各种牛奶各种欧巴在售各
+                            种淀粉各种牛奶各种欧至三十个字
+                        </a>
+                        <span class="tkzt tkgb">退款关闭</span>
+                        <small>12000公斤</small>
+                        <span>￥20,612,000.00</span>
+                        <p>
+                            <strong>截止时间：<em>2015-08-12 09:20:10</em></strong>
+                            <a href="javascript:;" class="fh ycshsh">延长收货时间</a>
+                            <a href="javascript:;" class="chakanzs">查看详情</a>
+                        </p>
+                    </div>
+                </div>
+                <!--right-list end-->
+                <div class="right-list"><!--right-list begin-->
+                    <div class="list-top">
+                        <span>销售单号：1223146556465</span>
+                        <span>下单时间：2015-07-16 09:52:36</span>
+
+                        <p>
+                            实收:<em>￥11,612,000.00</em>
+                        </p>
+                        <strong class="dsh">交易成功</strong>
+                    </div>
+                    <div class="list-main">
+                        <a href="javascript:;" class="imgzs">
+                            <img src="images/imgzs.png" alt=""/>
+                        </a>
+                        <a href="javascript:;" class="titlezs tkgb">
+                            各种淀粉各种牛奶各种欧巴在售各
+                            种淀粉各种牛奶各种欧至三十个字
+                        </a>
+                        <small>12000公斤</small>
+                        <span>￥20,612,000.00</span>
+                        <p>
+                            <a href="javascript:;" class="chakanzs jycg">查看详情</a>
+                        </p>
+                    </div>
+                </div>
+                <!--right-list end-->
+                <div class="right-list"><!--right-list begin-->
+                    <div class="list-top">
+                        <span>销售单号：1223146556465</span>
+                        <span>下单时间：2015-07-16 09:52:36</span>
+
+                        <p class="lineH">
+                            实收:<em>￥11,612,000.00</em>
+                            <br/>
+                            (含包谷付：10000)
+                        </p>
+                        <strong class="dsh">交易关闭</strong>
+                    </div>
+                    <div class="list-main">
+                        <a href="javascript:;" class="imgzs">
+                            <img src="images/imgzs.png" alt="" class="gray"/>
+                        </a>
+                        <a href="javascript:;" class="titlezs colorzs">
+                            各种淀粉各种牛奶各种欧巴在售各
+                            种淀粉各种牛奶各种欧至三十个字
+                        </a>
+                        <span class="tkzt tkcg">退款成功</span>
+                        <small class="colorzs">12000公斤</small>
+                        <span class="colorzs">￥20,612,000.00</span>
+                        <p>
+                            <!--<hr class="white"/>-->
+                            <!--<strong>截止时间：<em>2015-08-12 09:20:10</em></strong>-->
+                            <!--<a href="javascript:;" class="chakanzs">查看详情</a>-->
+                        </p>
+                    </div>
+                    <div class="list-main">
+                        <a href="javascript:;" class="imgzs">
+                            <img src="images/imgzs.png" alt="" class="gray"/>
+                        </a>
+                        <a href="javascript:;" class="titlezs colorzs">
+                            各种淀粉各种牛奶各种欧巴在售各
+                            种淀粉各种牛奶各种欧至三十个字
+                        </a>
+                        <span class="tkzt tkcg">退款成功</span>
+                        <small class="colorzs">12000公斤</small>
+                        <span class="colorzs">￥20,612,000.00</span>
+                        <p class="bordertop">
+                            <!--<hr class="white"/>-->
+                            <!--<strong>截止时间：<em>2015-08-12 09:20:10</em></strong>-->
+                            <!--<a href="javascript:;" class="chakanzs">查看详情</a>-->
+                        </p>
+                    </div>
+                </div>
+                <div class="right-list"><!--right-list begin-->
+                    <div class="list-top">
+                        <i></i>
+                        <span>销售单号：1223146556465</span>
+                        <span>下单时间：2015-07-16 09:52:36</span>
+
+                        <p>
+                            实收:<em>￥11,612,000.00</em>
+                        </p>
+                        <strong>融资中  待付款</strong>
+                    </div>
+                    <div class="list-main">
+                        <a href="javascript:;" class="imgzs">
+                            <img src="images/imgzs.png" alt=""/>
+                        </a>
+                        <a href="javascript:;" class="titlezs">
+                            各种淀粉各种牛奶各种欧巴在售各
+                            种淀粉各种牛奶各种欧至三十个字
+                        </a>
+                        <small>12000公斤</small>
+                        <span>￥20,612,000.00</span>
+                        <p>
+                            <a href="javascript:;" class="chakanzs jycg">查看详情</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="right-list"><!--right-list begin-->
+                    <div class="list-top">
+                        <i></i>
+                        <span>销售单号：1223146556465</span>
+                        <span>下单时间：2015-07-16 09:52:36</span>
+
+                        <p>
+                            实收:<em>￥11,612,000.00</em>
+                        </p>
+                        <strong>融资成功  待付款</strong>
+                    </div>
+                    <div class="list-main">
+                        <a href="javascript:;" class="imgzs">
+                            <img src="images/imgzs.png" alt=""/>
+                        </a>
+                        <a href="javascript:;" class="titlezs">
+                            各种淀粉各种牛奶各种欧巴在售各
+                            种淀粉各种牛奶各种欧至三十个字
+                        </a>
+                        <small>12000公斤</small>
+                        <span>￥20,612,000.00</span>
+                        <p>
+                            <a href="javascript:;" class="chakanzs jycg">查看详情</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="right-list"><!--right-list begin-->
+                    <div class="list-top">
+                        <i></i>
+                        <span>销售单号：1223146556465</span>
+                        <span>下单时间：2015-07-16 09:52:36</span>
+
+                        <p>
+                            实收:<em>￥11,612,000.00</em>
+                        </p>
+                        <strong class="dsh">融资成功  交易成功</strong>
+                    </div>
+                    <div class="list-main">
+                        <a href="javascript:;" class="imgzs">
+                            <img src="images/imgzs.png" alt=""/>
+                        </a>
+                        <a href="javascript:;" class="titlezs">
+                            各种淀粉各种牛奶各种欧巴在售各
+                            种淀粉各种牛奶各种欧至三十个字
+                        </a>
+                        <small>12000公斤</small>
+                        <span>￥20,612,000.00</span>
+                        <p>
+                            <a href="javascript:;" class="fh">立即提现</a>
+                            <a href="javascript:;" class="chakanzs jycg">查看详情</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="right-list"><!--right-list begin-->
+                    <div class="list-top">
+                        <i></i>
+                        <span>销售单号：1223146556465</span>
+                        <span>下单时间：2015-07-16 09:52:36</span>
+
+                        <p>
+                            实收:<em>￥11,612,000.00</em>
+                        </p>
+                        <strong class="dsh">融资失败  交易关闭</strong>
+                    </div>
+                    <div class="list-main">
+                        <a href="javascript:;" class="imgzs">
+                            <img src="images/imgzs.png" alt=""/>
+                        </a>
+                        <a href="javascript:;" class="titlezs">
+                            各种淀粉各种牛奶各种欧巴在售各
+                            种淀粉各种牛奶各种欧至三十个字
+                        </a>
+                        <small>12000公斤</small>
+                        <span>￥20,612,000.00</span>
+                        <p>
+                            <!--<a href="javascript:;" class="fh">立即提现</a>-->
+                            <!--<a href="javascript:;" class="chakanzs jycg">查看详情</a>-->
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--right-main end-->
+        </div>
+        <!--conetnt-right end-->
+    </div>
+    <!--content end-->
+</div>
+<!--wrap end-->
 <script src="javascript/getByClass.js"></script>
 <script src="javascript/move.js"></script>
 <script src="javascript/nav.js"></script>
