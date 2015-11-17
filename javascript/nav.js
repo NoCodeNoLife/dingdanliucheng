@@ -77,21 +77,21 @@ window.onload = function () {
     })();
 
     //right-nav内容区域右侧导航
-    (function () {
-        var oRightNav = document.getElementById('rightnav');
-        var aSpan = oRightNav.getElementsByTagName('span');
-        var oSmall = oRightNav.getElementsByTagName('small')[0];
-
-        for (var i = 0; i < aSpan.length; i++) {
-            aSpan[i].index = i;
-            aSpan[i].onmouseover = function () {
-                for(var i=0;i<aSpan.length;i++){
-                    aSpan[i].className = '';
-                }
-                move(oSmall, {left: this.index * 100, time: 500});
-                this.className = 'active';
-            }
-        }
-
-    })();
+    //(function () {
+    //    var oRightNav = document.getElementById('rightnav');
+    //    var aSpan = oRightNav.getElementsByTagName('span');
+    //    var oSmall = oRightNav.getElementsByTagName('small')[0];
+    //
+    //    for (var i = 0; i < aSpan.length; i++) {
+    //        aSpan[i].index = i;
+    //        aSpan[i].onmouseover = function () {
+    //            for(var i=0;i<aSpan.length;i++){
+    //                aSpan[i].className = '';
+    //            }
+    //            move(oSmall, {left: this.index * 100, time: 500});
+    //            this.className = 'active';
+    //        }
+    //    }
+    //
+    //})();
 }

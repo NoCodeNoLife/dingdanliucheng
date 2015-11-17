@@ -295,46 +295,42 @@
     margin-bottom: 25px;
 }
 
-.right-nav span {
-    width: 88px;
+.right-nav a {
+    width: auto;
     height: 50px;
     line-height: 50px;
     display: inline-block;
     float: left;
     font-size: 14px;
     color: #333;
-    padding-left: 12px;
+    padding-left: 16px;
 }
 
-.right-nav span.active {
+.right-nav a.active {
+    color: #c00;
+    border-bottom: #c00 2px solid;
+}
+
+.right-nav a.active em {
     color: #c00;
 }
 
-.right-nav span.active em {
-    color: #c00;
-}
-
-.right-nav span em {
+.right-nav a em {
     padding: 0 16px 0 4px;
     color: #069;
 }
 
-.right-nav span i {
+.right-nav a i {
     color: #e2e2e2;
     clear: both;
 }
 
-.right-nav span:hover {
-    cursor: pointer;
+.right-nav a:hover,.right-nav a:hover em {
+    color: #c00;
 }
 
-.right-nav small {
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    width: 92px;
-    height: 2px;
-    background: #c00;
+.right-nav a:hover{
+    border-bottom: #c00 2px solid;
 }
 
 .right-list {
