@@ -132,7 +132,15 @@ body {
     height: 16px;
 }
 
-.shfs span {
+.shfs div {
+    float: left;
+    width: 126px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.shfs a {
     border: #ccc 1px solid;
     display: block;
     width: 124px;
@@ -141,10 +149,10 @@ body {
     text-align: center;
     font-size: 14px;
     color: #666;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
-.shfs span.acive {
+.shfs a.acive {
     background: url("../images/fp.png") no-repeat;
     border: 0;
     width: 126px;
@@ -152,18 +160,57 @@ body {
     line-height: 43px;
 }
 
-.shfs span:hover {
+.shfs a:hover {
     border: #069 2px solid;
     width: 122px;
     height: 39px;
     line-height: 39px;
 }
 
-.shfs span.acive:hover {
+.shfs a.acive:hover {
     border: none;
     width: 126px;
     height: 43px;
     line-height: 43px;
+}
+
+.shfs ul {
+    width: 740px;
+    height: auto;
+    padding-left: 20px;
+    float: left;
+}
+
+.shfs ul li {
+    height: 43px;
+    margin-bottom: 20px;
+}
+
+.shfs li:last-child, .shfs a:last-child {
+    margin-bottom: 0;
+}
+
+.shfs ul li p {
+    height: 20px;
+    line-height: 20px;
+    margin-top: 1px;
+    width: 740px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #666;
+}
+
+.shfs p strong {
+    font-weight: normal;
+    color: #069;
+}
+
+.shfs p strong:hover {
+    cursor: pointer;
+}
+
+.shfs p em, .shfs p span {
+    padding-right: 22px;
 }
 
 .fhfs small {
@@ -187,6 +234,7 @@ body {
     padding: 0;
     margin-top: 52px;
     height: auto;
+    overflow: visible;
 }
 
 .fhfs div span {
@@ -213,6 +261,7 @@ body {
     display: inline-block;
     height: 32px;
     line-height: 32px;
+    float: left;
 }
 
 .fhfs p i.h62 {
@@ -230,6 +279,15 @@ body {
     padding: 0 9px;
     border: #cecece 1px solid;
     margin-right: 16px;
+    float: left;
+}
+
+.fhfs p input.xxdz{
+    width: 474px;
+}
+
+.fhfs p.shoujh input{
+    width: 180px;
 }
 
 .fhfs p textarea {
@@ -238,6 +296,11 @@ body {
     border: #cecece 1px solid;
     padding: 10px;
     resize: none;
+}
+
+.fhfs p select{
+    float: left;
+    display: none;
 }
 
 .fhfs p strong {
@@ -262,12 +325,16 @@ body {
     margin: 50px 0 0 78px;
 }
 
+.fhfs div a:hover {
+    background: #c00;
+}
+
 /*弹窗样式开始*/
 .maskwrap {
     width: 100%;
     background: #000;
+    filter: alpha(opacity=40);
     opacity: 0.4;
-    fliter: alpha(opacity:0.4);
     position: fixed;
     left: 0;
     top: 0;
@@ -490,7 +557,12 @@ body {
 }
 
 /**新增收货地址下拉样式开始**/
-.mask-main div.xinengdizhi {
+
+.fhfs div.xinengdizhi{
+    margin: 0;
+    padding: 0;
+}
+.mask-main div.xinengdizhi,.fhfs div.xinengdizhi {
     position: relative;
     display: inline-block;
     width: 95px;
@@ -504,9 +576,13 @@ body {
     *float: left;
 }
 
-.mask-main div.xinengdizhi span {
+.fhfs div.xinengdizhi{
+    overflow: visible;
+}
+
+.mask-main div.xinengdizhi span,.fhfs div.xinengdizhi span {
     display: block;
-    width: 95px;
+    width: 83px;
     height: 30px;
     padding-left: 12px;
     line-height: 30px;
@@ -514,7 +590,7 @@ body {
     background: url("http://172.16.254.31:12010/zixun/images/icon.png") no-repeat 76px -516px;
 }
 
-.mask-main div.xinengdizhi ul {
+.mask-main div.xinengdizhi ul,.fhfs div.xinengdizhi ul {
     display: none;
     position: absolute;
     left: -1px;
@@ -526,8 +602,8 @@ body {
     z-index: 999;
 }
 
-.mask-main div.xinengdizhi ul li {
-    width: 95px;
+.mask-main div.xinengdizhi ul li,.fhfs div.xinengdizhi ul li {
+    width: 83px;
     height: 30px;
     line-height: 30px;
     padding-left: 12px;
@@ -535,23 +611,15 @@ body {
     text-align: left;
 }
 
-.mask-main div.xinengdizhi ul li:hover {
+.mask-main div.xinengdizhi ul li:hover,.fhfs div.xinengdizhi li:hover {
     background: #069;
     cursor: pointer;
     color: #fff;
 }
 
 /**新增收货地址下拉样式结束**/
-
 /*弹窗样式结束*/
 
-
-
-
-
-
-
-
-
-
-
+.mask-show {
+    display: block;
+}

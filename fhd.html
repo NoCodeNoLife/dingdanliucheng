@@ -25,58 +25,104 @@
     <h3>送货方式</h3>
 
     <div class="shfs">
-        <span class="acive">送货上门</span>
-        <span>送货到站</span>
+        <div id="btn">
+            <a>送货上门</a>
+            <a>送货到站</a>
+        </div>
+        <ul id="box">
+            <li>
+                <p><em>梧桐</em><i>13331336526</i></p>
+                <p><span>北京市丰台区南四环东路88号总部基地</span><small>卖家承运，买家支付运费给卖家</small><strong>【修改】</strong> </p>
+            </li>
+            <li>
+                <p><em>梧桐</em><i>13331336526</i></p>
+                <p><span>北京市丰台区南四环东路88号总部基地</span><small>卖家承运，买家支付运费给卖家</small><strong>【修改】</strong></p>
+            </li>
+        </ul>
     </div>
     <h3>发货方式</h3>
 
     <div class="fhfs">
         <small>发货地址：</small>
         <p class="address">北京市丰台区丰台科技园总部基地 18区17号楼4层包谷网 梧桐 13678900987<a href="javascript:;" id="modify">【修改】</a> </p>
+        <div class="xindz">
+            <span>请输入发货地址</span>
+            <form action="">
+                <p><i>收货人：</i><input type="text" value="" class="shr"/></p>
+                <p><i>所在区：</i>
+                <select name="shengzs">
+                        <option value="" selected="selected">请选择</option>
+                        <option value="">河南省</option>
+                        <option value="">河北省</option>
+                        <option value="">湖北省</option>
+                    </select>
+                    <select name="shizs">
+                        <option value="" selected="selected">请选择</option>
+                        <option value="">河南省</option>
+                        <option value="">河北省</option>
+                        <option value="">湖北省</option>
+                        <option value="">湖南省</option>
+                        <option value="">江西省</option>
+                    </select>
+                    <select name="xianzs">
+                        <option value="" selected="selected">请选择</option>
+                        <option value="">湖南省</option>
+                        <option value="">江西省</option>
+                    </select>
+                </p>
+                <p><i>详细地址：</i><input type="text" value="" class="xxdz"/></p>
+                <p class="shoujh"><i>手机号：</i><input type="text" value="" class="sjh"/><i>固定电话：</i><input type="text" value="" class="gddh"/></p>
+                <p><i>邮编：</i><input type="text" value="" class="yb"/></p>
+            </form>
+        </div>
         <div>
             <span>请输入物流信息：<em>(卖家承运-自找物流发货)</em></span>
-            <p><i>货运公司</i><input type="text" value=""/><strong>收货人不能为空!</strong></p>
-            <p><i>货运公司</i><input type="text" value=""/><strong>收货人不能为空!</strong></p>
-            <p><i>货运公司</i><input type="text" value=""/><strong>收货人不能为空!</strong></p>
-            <p><i>货运公司</i><input type="text" value=""/><strong>收货人不能为空!</strong></p>
-            <p><i class="h62">货运公司</i><textarea name="" id=""></textarea></p>
+            <form action="">
+                <p><i>货运公司</i><input type="text" value=""/><strong>收货人不能为空!</strong></p>
+                <p><i>货运单号</i><input type="text" value=""/><strong>收货人不能为空!</strong></p>
+                <p><i>联系人</i><input type="text" value=""/><strong>收货人不能为空!</strong></p>
+                <p><i>联系电话</i><input type="text" value=""/><strong>收货人不能为空!</strong></p>
+                <p><i class="h62">备注</i><textarea name=""></textarea></p>
+            </form>
             <a href="javascript:;">发货</a>
         </div>
     </div>
 </div>
 <!--fhd end-->
-<div class="maskwrap" id="maskwrap"><!--弹出背景色 --></div><!-- 弹窗背景色-->
+<div class="maskwrap" id="maskwrap"><!--弹窗背景色 --></div><!-- 弹窗背景色-->
 <div class="mask-main" id="mask-main"><!--mask-main begin-->
     <div class="subtop">
-        <h5>修改收货人信息</h5>
+        <h5 id="inner"></h5>
         <small id="close"></small>
     </div>
-    <p><em><i>*</i>收货人：</em><input type="text" value="" class="shr"/></p>
-    <p><em><i>*</i>所在区：</em>
-        <select name="sheng">
-            <option value="" selected="selected">请选择</option>
-            <option value="">河南省</option>
-            <option value="">河北省</option>
-            <option value="">湖北省</option>
-        </select>
-        <select name="shi">
-            <option value="" selected="selected">请选择</option>
-            <option value="">河南省</option>
-            <option value="">河北省</option>
-            <option value="">湖北省</option>
-            <option value="">湖南省</option>
-            <option value="">江西省</option>
-        </select>
-        <select name="xian">
-            <option value="" selected="selected">请选择</option>
-            <option value="">湖南省</option>
-            <option value="">江西省</option>
-        </select>
-    </p>
-    <p><em><i>*</i>详细地址：</em><input type="text" value="" class="xxdz"/></p>
-    <p class="shoujh"><em><i>*</i>手机号：</em><input type="text" value="" class="sjh"/></p>
-    <p class="guddh"><em><i>*</i>固定电话：</em><input type="text" value="" class="gddh"/></p>
-    <p><em><i>*</i>邮编：</em><input type="text" value="" class="yb"/></p>
+    <form action="">
+        <p><em><i>*</i>收货人：</em><input type="text" value="" class="shr"/></p>
+        <p><em><i>*</i>所在区：</em>
+            <select name="sheng">
+                <option value="" selected="selected">请选择</option>
+                <option value="">河南省</option>
+                <option value="">河北省</option>
+                <option value="">湖北省</option>
+            </select>
+            <select name="shi">
+                <option value="" selected="selected">请选择</option>
+                <option value="">河南省</option>
+                <option value="">河北省</option>
+                <option value="">湖北省</option>
+                <option value="">湖南省</option>
+                <option value="">江西省</option>
+            </select>
+            <select name="xian">
+                <option value="" selected="selected">请选择</option>
+                <option value="">湖南省</option>
+                <option value="">江西省</option>
+            </select>
+         </p>
+        <p><em><i>*</i>详细地址：</em><input type="text" value="" class="xxdz"/></p>
+        <p class="shoujh"><em><i>*</i>手机号：</em><input type="text" value="" class="sjh"/></p>
+        <p class="guddh"><em><i>*</i>固定电话：</em><input type="text" value="" class="gddh"/></p>
+        <p><em><i>*</i>邮编：</em><input type="text" value="" class="yb"/></p>
+    </form>
     <a href="javascript:;" class="baocundz" id="baocundz">保存收货信息</a>
 </div><!--mask-main end-->
 <script src="javascript/getByClass.js"></script>

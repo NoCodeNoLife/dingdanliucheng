@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>付款成功</title>
+    <title>付款无效</title>
     <link rel="stylesheet" href="style/global.css"/>
     <link rel="stylesheet" href="style/fkcg.css"/>
 </head>
@@ -26,31 +26,13 @@
 </div>
 <!--topzs end-->
 <div class="wrap"><!--wrap begin-->
-    <div class="fkcg"><!--fkcg begin-->
-        <h3>恭喜您，付款成功！</h3>
+    <div class="shibai height380">
+        <h3>很遗憾，付款无效！</h3>
         <small>支付金额：<em>￥1213465467987687</em></small>
-        <strong>请耐心等待供应商发货！</strong>
-        <p><span class="Count" id="count">5秒</span>后自动返回采购单列表页！</p>
-        <a href="javascript:;" class="chakan">查看采购单</a>
-        <a href="javascript:;" class="jixu">继续采购</a>
+        <small>由于网络原因,您的网银支付的结果为反馈到包谷网</small>
+        <a href="javascript:;" class="cxzfu">立即退款</a>
     </div>
-    <!-- fkcg end-->
 </div><!--wrap end-->
-<script>
-
-    var count = document.getElementById('count');
-    var Num = 5;
-    var timer = null;
-
-    timer = setInterval(function () {
-        Num--;
-        if (Num == 1) {
-            clearInterval(timer);
-            window.location.href = "http://www.baidu.com";
-        }
-        count.innerHTML = Num + '秒';
-    }, 1000)
-</script>
 </body>
 </html>
 

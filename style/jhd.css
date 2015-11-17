@@ -554,8 +554,8 @@
     left: 0;
     top: 0;
     background: #000;
-    opacity: .4;
-    filter: alpha(opacity: .4);
+    opacity: 0.4;
+    filter: alpha(opacity=40);
     z-index: 998;
     display: none;
 }

@@ -48,23 +48,57 @@
 })();
 
 //修改收货地址
-(function(){
+(function () {
     var oModify = document.getElementById('modify');
     var oMask = document.getElementById('maskwrap');
     var maskMain = document.getElementById('mask-main');
     var clientH = document.body.clientHeight;
     var colse = document.getElementById('close');
+    var oH5 = document.getElementById('inner');
+
+    var oBtn = document.getElementById('btn');
+    var aBtn = oBtn.getElementsByTagName('a');
+    var oBox = document.getElementById('box');
+    var aLi = oBox.getElementsByTagName('li');
+    var aStrong = oBox.getElementsByTagName('strong');
+
+    //送货方式选择:
+    for (var i = 0; i < aBtn.length; i++) {
+        aBtn[i].index = i;
+        aBtn[i].onclick = function () {
+            for (var i = 0; i < aBtn.length; i++) {
+                aBtn[i].className = '';
+                aBtn[i].style.display = 'none';
+                aLi[i].style.display = 'none';
+            }
+            this.className = 'acive';
+            this.style.display = 'block'
+            this.style.marginBottom = 0;
+            aLi[this.index].style.display = 'block';
+            aLi[this.index].style.marginBottom = 0;
+        }
+    }
+
+    for (var i = 0; i < aStrong.length; i++) {
+        aStrong[i].onclick = function () {
+            oMask.style.display = 'block';
+            maskMain.style.display = 'block';
+            oH5.innerHTML = '修改送货地址';
+        }
+    }
 
     oMask.style.height = clientH + 'px';
 
-    oModify.onclick = function(){
+    oModify.onclick = function () {
         oMask.style.display = 'block';
         maskMain.style.display = 'block';
+        oH5.innerHTML = '修改收货人信息';
     }
 
-    colse.onclick = function(){
+    colse.onclick = function () {
         oMask.style.display = 'none';
         maskMain.style.display = 'none';
+        oH5.innerHTML = '';
     }
 
 
@@ -103,8 +137,12 @@
             })(i);
         }
     }
-
+    mySelect('shengzs');
+    mySelect('shizs');
+    mySelect('xianzs');
     mySelect('sheng');
     mySelect('shi');
     mySelect('xian');
 })();
+
+
