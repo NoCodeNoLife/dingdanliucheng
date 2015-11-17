@@ -7,12 +7,28 @@ window.onload = function () {
         var oNav = document.getElementById('nav');
         var oMove = document.getElementById('move');
         var aLi = oNav.getElementsByTagName('li');
+        var onoff = true;
 
         for (var i = 0; i < aLi.length; i++) {
             aLi[i].index = i;
             aLi[i].onmouseover = function () {
                 move(oMove, {left: this.index * 85 + this.index * 20, time: 500});
+                this.onoff = false;
+            };
+
+            aLi[i].onmouseout = function(){
+                if(this.onoff){
+                    move(oMove, {left: this.index * 85 + this.index * 20, time: 500});
+                } else{
+                    move(oMove, {left: 0, time: 500});
+                }
+            };
+
+            aLi[i].onclick = function(){
+                this.onoff = true;
+                move(oMove, {left: this.index * 85 + this.index * 20, time: 500});
             }
+
         }
 
     })();
@@ -27,14 +43,19 @@ window.onload = function () {
         for (var i = 0; i < aBtn.length; i++) {
             aBtn[i].index = i;
             aBtn[i].onclick = function () {
+                if(this.className == 'active'){
+                    move(aDiv[this.index],{height: 0,paddingTop:0});
+                    this.className = '';
+                }else{
+                    for (var i = 0; i < aDiv.length; i++) {
+                        move(aDiv[i], {height: 0,paddingTop:0})
+                        aBtn[i].className = '';
+                    }
 
-                for (var i = 0; i < aDiv.length; i++) {
-                    move(aDiv[i], {height: 0})
-                    aBtn[i].className = '';
+                    var aLi = aDiv[this.index].getElementsByTagName('a');
+                    move(aDiv[this.index], {height: 10 + 34 * aLi.length, paddingTop: 10});
+                    aBtn[this.index].className = 'active';
                 }
-                var aLi = aDiv[this.index].getElementsByTagName('a');
-                move(aDiv[this.index], {height: 10 + 34 * aLi.length, paddingTop: 10})
-                aBtn[this.index].className = 'active';
             }
         }
         //找元素，方便以后扩展；
@@ -76,22 +97,4 @@ window.onload = function () {
 
     })();
 
-    //right-nav内容区域右侧导航
-    //(function () {
-    //    var oRightNav = document.getElementById('rightnav');
-    //    var aSpan = oRightNav.getElementsByTagName('span');
-    //    var oSmall = oRightNav.getElementsByTagName('small')[0];
-    //
-    //    for (var i = 0; i < aSpan.length; i++) {
-    //        aSpan[i].index = i;
-    //        aSpan[i].onmouseover = function () {
-    //            for(var i=0;i<aSpan.length;i++){
-    //                aSpan[i].className = '';
-    //            }
-    //            move(oSmall, {left: this.index * 100, time: 500});
-    //            this.className = 'active';
-    //        }
-    //    }
-    //
-    //})();
 }
