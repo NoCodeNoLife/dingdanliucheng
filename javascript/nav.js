@@ -13,18 +13,19 @@ window.onload = function () {
             aLi[i].index = i;
             aLi[i].onmouseover = function () {
                 move(oMove, {left: this.index * 85 + this.index * 20, time: 500});
+
                 this.onoff = false;
             };
 
-            aLi[i].onmouseout = function(){
-                if(this.onoff){
+            aLi[i].onmouseout = function () {
+                if (this.onoff) {
                     move(oMove, {left: this.index * 85 + this.index * 20, time: 500});
-                } else{
+                } else {
                     move(oMove, {left: 0, time: 500});
                 }
             };
 
-            aLi[i].onclick = function(){
+            aLi[i].onclick = function () {
                 this.onoff = true;
                 move(oMove, {left: this.index * 85 + this.index * 20, time: 500});
             }
@@ -43,12 +44,12 @@ window.onload = function () {
         for (var i = 0; i < aBtn.length; i++) {
             aBtn[i].index = i;
             aBtn[i].onclick = function () {
-                if(this.className == 'active'){
-                    move(aDiv[this.index],{height: 0,paddingTop:0});
+                if (this.className == 'active') {
+                    move(aDiv[this.index], {height: 0, paddingTop: 0});
                     this.className = '';
-                }else{
+                } else {
                     for (var i = 0; i < aDiv.length; i++) {
-                        move(aDiv[i], {height: 0,paddingTop:0})
+                        move(aDiv[i], {height: 0, paddingTop: 0})
                         aBtn[i].className = '';
                     }
 
