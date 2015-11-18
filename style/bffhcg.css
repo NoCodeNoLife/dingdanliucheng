@@ -10,6 +10,10 @@ body {
     background: url(../images/success.png) no-repeat 306px 48px #fff;
 }
 
+.shibai {
+    background: url(../images/fksb.png) no-repeat 306px 48px #fff;
+}
+
 .main h3 {
     font-size: 24px;
     font-weight: normal;
@@ -60,6 +64,17 @@ body {
     border: #dfdfdf 1px solid;
     border-radius: 3px;
     font-size: 14px;
+}
+
+.main a.fahuo {
+    height: 32px;
+    line-height: 32px;
+    color: #069;
+    font-size: 12px;
+}
+
+.main a.fahuo:hover {
+    color: #c00;
 }
 
 .main a.chakan:hover {
@@ -137,7 +152,7 @@ body {
 
 .content p small {
     padding: 0 10px 10px 30px;
-    width: 440px;
+    width: 480px;
     line-height: 20px;
     overflow: hidden;
     display: block;

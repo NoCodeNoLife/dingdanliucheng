@@ -2,20 +2,21 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>部分发货成功</title>
+    <title>发货失败</title>
     <link rel="stylesheet" href="style/global.css"/>
     <link rel="stylesheet" href="style/bffhcg.css"/>
 </head>
 <body>
-<div class="main"><!--main begin-->
-    <h3>恭喜您，发货成功！</h3>
+<div class="main shibai"><!--main begin-->
+    <h3>很遗憾，发货失败！</h3>
 
     <p><span class="Count" id="count">30秒</span>后自动跳转到包谷首页！</p>
-    <a href="javascript:;" class="jixu">继续发货</a>
+    <a href="javascript:;" class="jixu">重新发货</a>
     <a href="javascript:;" class="chakan">查看销售单</a>
+    <a href="javascript:;" class="fahuo">继续发货</a>
 </div>
 <!--main end-->
-<p class="sub"><strong>发货信息</strong><span>(已发货商品：2种，待发货商品：2种)</span></p>
+<p class="sub"><strong>发货信息</strong></p>
 
 <div class="content"><!--content begin-->
     <h4>物流信息</h4>
@@ -45,36 +46,12 @@
     <p><em>余额:</em><span>166,666,000,98.00元(含运费:199.88.200.00元)</span></p>
     <hr class="linear"/>
     <h4>商品信息</h4>
-    <h5>已发货商品</h5>
 
     <div class="list">
         <ul>
             <li>
                 <a href="javascript:;" class="img-a"><img src="images/imgzs.png" alt=""/></a>
                 <p>
-                <a href="javascript:;" class="title-a">各种淀粉各种欧巴葛总淀粉欧巴在线销售啦啦啦够30个字不</a>
-                <span>增值税发票</span>
-                </p>
-                <small>12000 公斤</small>
-                <em>￥20,000,000.00</em>
-            </li>
-            <li>
-                <a href="javascript:;" class="img-a"><img src="images/imgzs.png" alt=""/></a>
-                <p>
-                    <a href="javascript:;" class="title-a">各种淀粉各种欧巴葛总淀粉欧巴在线销售啦啦啦够30个字不</a>
-                    <span>增值税发票</span>
-                </p>
-                <small>12000 公斤</small>
-                <em>￥20,000,000.00</em>
-            </li>
-        </ul>
-    </div>
-    <h5>待发货商品</h5>
-    <div class="list">
-        <ul>
-            <li>
-                <a href="javascript:;" class="img-a"><img src="images/imgzs.png" alt=""/></a>
-                <p>
                     <a href="javascript:;" class="title-a">各种淀粉各种欧巴葛总淀粉欧巴在线销售啦啦啦够30个字不</a>
                     <span>增值税发票</span>
                 </p>
@@ -92,8 +69,9 @@
             </li>
         </ul>
     </div>
+
 </div>
-<!--content end-->
+content end
 <script>
     window.onload = function () {
         var count = document.getElementById('count');
