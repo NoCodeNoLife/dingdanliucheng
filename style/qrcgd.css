@@ -1,4 +1,4 @@
-body{
+body {
     background: #f3f3f3;
 }
 
@@ -43,6 +43,7 @@ body{
     width: 948px;
     height: 176px;
     overflow: hidden;
+    /*overflow-x: hidden;*/
     margin-bottom: 40px;
 }
 
@@ -209,7 +210,7 @@ body{
     background: #fff;
 }
 
-.fpiao p{
+.fpiao p {
     width: 100%;
     height: 90px;
 }
@@ -248,28 +249,28 @@ body{
     line-height: 39px;
 }
 
-.fpiao div.hide{
+.fpiao div.hide {
     display: none;
 }
 
-.zengzs,.creatzzs,.ptfapiao,.creatpt{
+.zengzs, .creatzzs, .ptfapiao, .creatpt {
     width: 588px;
     height: 356px;
     margin-left: 48px;
 }
 
-.ptfapiao,.creatpt{
+.ptfapiao, .creatpt {
     margin-left: 0;
     height: 124px;
 }
 
-.zengzs p,.creatzzs p,.ptfapiao p,.creatpt p{
+.zengzs p, .creatzzs p, .ptfapiao p, .creatpt p {
     width: 100%;
     height: 32px;
     margin-bottom: 16px;
 }
 
-.zengzs p em,.creatzzs p em,.ptfapiao p em,.creatpt p em{
+.zengzs p em, .creatzzs p em, .ptfapiao p em, .creatpt p em {
     width: 110px;
     height: 32px;
     line-height: 32px;
@@ -278,30 +279,30 @@ body{
     color: #666;
 }
 
-.zengzs p em i{
+.zengzs p em i {
     color: #c00;
     width: 6px;
     height: 6px;
 }
 
-.zengzs p input,.creatzzs p span,.ptfapiao p input,.creatpt p span{
+.zengzs p input, .creatzzs p span, .ptfapiao p input, .creatpt p span {
     width: 438px;
     height: 30px;
     line-height: 30px;
-    border:#cecece 1px solid;
+    border: #cecece 1px solid;
     padding: 0 10px;
     margin-left: 18px;
     font-size: 14px;
     color: #666;
 }
 
-.creatzzs p span,.creatpt p span{
+.creatzzs p span, .creatpt p span {
     height: 32px;
     line-height: 32px;
     border: 0;
 }
 
-.zengzs a,.creatzzs a,.ptfapiao a,.creatpt a{
+.zengzs a, .creatzzs a, .ptfapiao a, .creatpt a {
     display: block;
     float: left;
     width: 86px;
@@ -313,20 +314,20 @@ body{
     color: #fff;
 }
 
-.zengzs a.baocun,.creatzzs a.baocun,.ptfapiao a.baocun,.creatpt a.baocun{
+.zengzs a.baocun, .creatzzs a.baocun, .ptfapiao a.baocun, .creatpt a.baocun {
     background: #008bd1;
     margin: 0 16px 0 128px;
 }
 
-.zengzs a.baocun:hover,.creatzzs a.baocun:hover,.ptfapiao a.baocun:hover,.creatpt a.baocun:hover{
+.zengzs a.baocun:hover, .creatzzs a.baocun:hover, .ptfapiao a.baocun:hover, .creatpt a.baocun:hover {
     background: #c00;
 }
 
-.zengzs a.quxiao,.ptfapiao a.quxiao{
+.zengzs a.quxiao, .ptfapiao a.quxiao {
     background: #ccc;
 }
 
-.zengzs a.quxiao:hover,.ptfapiao a.quxiao:hover{
+.zengzs a.quxiao:hover, .ptfapiao a.quxiao:hover {
     background: #929091;
 }
 
@@ -362,13 +363,13 @@ body{
     position: relative;
 }
 
-.surelist i.pai{
+.surelist i.pai {
     position: absolute;
     display: block;
     width: 20px;
     height: 20px;
     left: 34px;
-    top:28px;
+    top: 28px;
     background: #468e3d;
     color: #fff;
     line-height: 20px;
@@ -459,9 +460,10 @@ body{
 
 .list-center {
     width: 190px;
-    height: 130px;
+    height: 129px;
     float: left;
-    padding-top: 24px;
+    padding-top: 25px;
+    position: relative;
 }
 
 .list-center strong {
@@ -513,6 +515,107 @@ body{
     text-align: center;
     display: block;
     overflow: hidden;
+}
+
+.list-center p {
+    width: 100px;
+    height: 42px;
+    padding: 7px 0;
+    background: url("../images/tipszs.png") no-repeat;
+    position: absolute;
+    left: 45px;
+    top: -34px;
+    display: none;
+}
+
+.list-center p:hover {
+    cursor: pointer;
+}
+
+.list-center p em {
+    display: block;
+    width: 100px;
+    text-align: center;
+    color: #c00;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 4px;
+}
+
+.list-center p i {
+    display: block;
+    width: 100px;
+    text-align: center;
+    color: #069;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.xinjiage {
+    width: 232px;
+    border: #d4d4d4 1px solid;
+    -moz-box-shadow: 0px 0px 10px #d4d4d4;
+    -webkit-box-shadow: 0px 0px 10px #d4d4d4;
+    box-shadow: 0px 0px 10px #d4d4d4;
+    position: absolute;
+    left: 310px;
+    bottom: 0;
+    background: #fff;
+    z-index: 900;
+    display: none;
+}
+
+.xinjiage div {
+    height: 36px;
+    width: 100%;
+    border-bottom: #d4d4d4 1px solid;
+}
+
+.xinjiage h5 {
+    width: 82px;
+    text-align: center;
+    line-height: 35px;
+    font-weight: normal;
+    height: 35px;
+    font-size: 14px;
+    border-bottom: #069 2px solid;
+    float: left;
+}
+
+.xinjiage span {
+    width: 13px;
+    height: 13px;
+    display: block;
+    float: right;
+    margin: 13px;
+    background: url("../images/closezs.png") no-repeat;
+}
+
+.xinjiage strong{
+    width: 210px;
+    padding: 0 10px;
+    height: 14px;
+    line-height: 14px;
+    overflow: hidden;
+    margin: 10px 0;
+    font-weight: normal;
+    display: block;
+    font-size: 14px;
+}
+
+
+.xinjiage p {
+    padding: 0 10px;
+    width: 210px;
+    height: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    color: #999;
+    font-size: 14px;
+}
+
+.xinjiage span:hover{
+    cursor: pointer;
 }
 
 .list-right {
@@ -585,25 +688,25 @@ body{
     text-align: right;
 }
 
-.liuyan-right{
-    width:450px;
+.liuyan-right {
+    width: 450px;
     height: 202px;
     float: left;
     padding: 32px 50px 0 0;
 }
 
-.fhuofs{
+.fhuofs {
     width: 190px;
     height: 32px;
     float: left;
     margin-bottom: 6px;
 }
 
-.fhuofs select{
+.fhuofs select {
     display: none;
 }
 
-.fhuofs em,.hjyf em,.yunfzf em,.youhq em{
+.fhuofs em, .hjyf em, .yunfzf em, .youhq em {
     width: 64px;
     height: 32px;
     line-height: 32px;
@@ -615,13 +718,13 @@ body{
     float: left;
 }
 
-.hjyf{
+.hjyf {
     width: 186px;
     float: right;
     margin-bottom: 6px;
 }
 
-.hjyf input{
+.hjyf input {
     display: inline-block;
     float: left;
     width: 90px;
@@ -631,16 +734,16 @@ body{
     border: #e8e6e6 1px solid;
 }
 
-.yunfzf{
+.yunfzf {
     width: 190px;
     margin-bottom: 6px;
 }
 
-.yunfzf select{
+.yunfzf select {
     display: none;
 }
 
-.youhq{
+.youhq {
     width: 450px;
     float: left;
     height: auto;
@@ -648,22 +751,22 @@ body{
 
 }
 
-.youhq select{
+.youhq select {
     height: 30px;
     width: 360px;
     display: none;
 }
 
-.youhq small{
+.youhq small {
     font-size: 12px;
     color: #c00;
     display: block;
     width: 430px;
     text-align: right;
-    padding:6px 0 0 10px;
+    padding: 6px 0 0 10px;
 }
 
-.shif{
+.shif {
     width: 445px;
     height: auto;
     text-align: right;
@@ -672,13 +775,13 @@ body{
     margin-top: 70px;
 }
 
-.shif i{
+.shif i {
     color: #c00;
     font-size: 20px;
     margin-left: 8px;
 }
 
-.shif b{
+.shif b {
     font-weight: normal;
     font-size: 12px;
     color: #999;
@@ -697,12 +800,12 @@ body{
     padding-left: 0;
     font-size: 14px;
     color: #666;
-    *left:60px;
+    *left: 60px;
     *top: -20px;
-    -left:60px;
+    -left: 60px;
     -top: -20px;
-    *clear:both;
-    _celar:both;
+    *clear: both;
+    _celar: both;
     *margin-top: -10px;
     _margin-top: -10px;
     *margin-left: 15px;
@@ -747,27 +850,27 @@ body{
     color: #fff;
 }
 
-.youhq div.my-select{
+.youhq div.my-select {
     height: 30px;
     width: 360px;
 }
 
-.youhq div.my-select span{
+.youhq div.my-select span {
     width: 360px;
     background: url("http://172.16.254.31:12010/zixun/images/icon.png") no-repeat 340px -516px;
 }
 
-.youhq div.my-select ul{
+.youhq div.my-select ul {
     width: 360px;
 }
 
-.youhq div.my-select ul li{
+.youhq div.my-select ul li {
     width: 360px;
 }
 
 /*确认采购信息部分自定义下拉样式结束*/
 
-.qujies{
+.qujies {
     width: 1000px;
     background: #fff;
     height: 75px;
@@ -775,14 +878,14 @@ body{
     padding: 40px 0 55px 0;
 }
 
-.qujies div{
+.qujies div {
     height: 74px;
     background: #ddd;
     border-bottom: #c8c8c8 1px solid;
     padding-left: 300px;
 }
 
-.qujies p{
+.qujies p {
     width: 270px;
     height: 74px;
     line-height: 74px;
@@ -791,17 +894,17 @@ body{
     color: #333;
 }
 
-.qujies p span{
+.qujies p span {
     font-size: 18px;
     color: #c00;
 }
 
-.qujies p i{
+.qujies p i {
     font-size: 24px;
     color: #c00;
 }
 
-.qujies a{
+.qujies a {
     display: block;
     width: 100%;
     height: 14px;
@@ -814,11 +917,11 @@ body{
     width: 970px;
 }
 
-.qujies a:hover{
+.qujies a:hover {
     color: #c00;
 }
 
-.qujies div em{
+.qujies div em {
     display: block;
     float: left;
     width: 160px;
@@ -830,23 +933,23 @@ body{
     font-size: 22px;
 }
 
-.qujies div em:hover{
+.qujies div em:hover {
     cursor: pointer;
     background: #f95a5a;
 }
 
-.maskwrap{
+.maskwrap {
     width: 100%;
     background: #000;
     opacity: 0.4;
-    fliter: alpha(opacity:0.4);
+    filter: alpha(opacity=40);
     position: fixed;
     left: 0;
     top: 0;
     z-index: 998;
 }
 
-.mask-main{
+.mask-main {
     z-index: 999;
     position: fixed;
     left: 50%;
@@ -858,7 +961,7 @@ body{
     display: none;
 }
 
-.mask-main div{
+.mask-main div {
     height: 44px;
     border-bottom: #d4d4d4 1px solid;
     line-height: 44px;
@@ -866,7 +969,7 @@ body{
     margin-bottom: 24px;
 }
 
-.mask-main div h5{
+.mask-main div h5 {
     border-bottom: #069 2px solid;
     height: 43px;
     line-height: 43px;
@@ -878,7 +981,7 @@ body{
     float: left;
 }
 
-.mask-main div small{
+.mask-main div small {
     display: block;
     float: right;
     width: 13px;
@@ -887,31 +990,31 @@ body{
     background: url("../images/closezs.png") no-repeat;
 }
 
-.mask-main div small:hover{
+.mask-main div small:hover {
     cursor: pointer;
 }
 
-.mask-main p{
+.mask-main p {
     width: 100%;
     height: 32px;
     margin-bottom: 16px;
 }
 
-.mask-main p.shoujh{
+.mask-main p.shoujh {
     width: 306px;
     float: left;
 }
 
-.mask-main p.guddh{
+.mask-main p.guddh {
     width: 290px;
     float: left;
 }
 
-.mask-main p.guddh em{
+.mask-main p.guddh em {
     width: 100px;
 }
 
-.mask-main p em{
+.mask-main p em {
     width: 118px;
     display: block;
     float: left;
@@ -920,11 +1023,11 @@ body{
     text-align: right;
 }
 
-.mask-main p em i{
+.mask-main p em i {
     color: #c00;
 }
 
-.mask-main p input{
+.mask-main p input {
     display: block;
     float: left;
     height: 30px;
@@ -935,32 +1038,32 @@ body{
     color: #333;
 }
 
-.mask-main p input.shr{
+.mask-main p input.shr {
     width: 190px;
 }
 
-.mask-main p input.xxdz{
+.mask-main p input.xxdz {
     width: 454px;
 }
 
-.mask-main p input.sjh{
+.mask-main p input.sjh {
     width: 164px;
 }
 
-.mask-main p input.gddh{
+.mask-main p input.gddh {
     width: 166px;
 }
 
-.mask-main p input.yb{
+.mask-main p input.yb {
     width: 164px;
 }
 
-.mask-main  select{
+.mask-main select {
     display: none;
     float: left;
 }
 
-.mask-main a.baocundz{
+.mask-main a.baocundz {
     width: 123px;
     height: 35px;
     text-align: center;
@@ -975,7 +1078,7 @@ body{
     clear: both;
 }
 
-.mask-main a:hover{
+.mask-main a:hover {
     background: #c00;
 }
 
@@ -1060,8 +1163,6 @@ body{
     color: #c00;
 }
 
-
-
 /**新增收货地址下拉样式开始**/
 .mask-main div.xinengdizhi {
     position: relative;
@@ -1113,9 +1214,87 @@ body{
     cursor: pointer;
     color: #fff;
 }
+
 /**新增收货地址下拉样式结束**/
 
+/*库存不足提示弹框样式开始*/
+.kucunbz{
+    width: 398px;
+    height: 196px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -98px 0 0 -199px;
+    z-index: 999;
+    -moz-box-shadow: 0px 0px 10px #d4d4d4;
+    -webkit-box-shadow: 0px 0px 10px #d4d4d4;
+    box-shadow: 0px 0px 10px #d4d4d4;
+    background: #fff;
+    display: none;
+}
 
+.kucunbz div{
+    height: 36px;
+    width: 100%;
+    border-bottom: #d4d4d4 1px solid;
+}
+
+.kucunbz div h5{
+    width: 82px;
+    text-align: center;
+    line-height: 35px;
+    font-weight: normal;
+    height: 35px;
+    font-size: 14px;
+    border-bottom: #069 2px solid;
+    float: left;
+}
+
+.kucunbz div span{
+    width: 13px;
+    height: 13px;
+    display: block;
+    float: right;
+    margin: 13px;
+    background: url("../images/closezs.png") no-repeat;
+}
+
+.kucunbz div span:hover{
+    cursor: pointer;
+}
+
+.kucunbz p{
+    height: 84px;
+    line-height: 84px;
+    font-size: 14px;
+    color: #666;
+    width: 376px;
+    padding-left: 22px;
+}
+
+.kucunbz p em{
+    color: #c00;
+    padding: 0 2px;
+}
+
+.kucunbz a{
+    width: 86px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    background: #069;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 3px;
+    margin-left: 160px;
+    display: inline-block;
+}
+
+.kucunbz a:hover{
+    background: #c00;
+}
+
+/*库存不足提示弹框样式结束*/
 
 
 

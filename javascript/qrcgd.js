@@ -15,15 +15,22 @@ window.onload = function () {
         showAll.onclick = function () {
 
             if (this.className == 'showall') {
-                move(oBox, {height: BoxList[0].offsetHeight * BoxList.length})
+                if(oBox.style.height < 528){
+                    move(oBox, {height: BoxList[0].offsetHeight * BoxList.length});
+                    oBox.className = '';
+                } else ( oBox.offsetHeight > 528 )
+                {
+                    move(oBox, {height: 528})//528：默认显示3行地址，每一行的高度是176px；
+                    oBox.className = 'scrolldiv';
+                }
                 this.className = 'showall-active';
                 this.innerHTML = '收起全部地址';
             } else {
+                oBox.className = '';
                 this.className = 'showall';
                 move(oBox, {height: 176});
                 this.innerHTML = '显示全部地址';
             }
-
         }
 
         //设置为默认收货地址
@@ -37,10 +44,39 @@ window.onload = function () {
             }
         }
 
+
+        ////显示隐藏全部收货地址(修改前)
+        //showAll.onclick = function () {
+        //
+        //    if (this.className == 'showall') {
+        //        move(oBox, {height: BoxList[0].offsetHeight * BoxList.length})
+        //        this.className = 'showall-active';
+        //        this.innerHTML = '收起全部地址';
+        //    } else {
+        //        this.className = 'showall';
+        //        move(oBox, {height: 176});
+        //        this.innerHTML = '显示全部地址';
+        //    }
+        //
+        //}
+        //
+        ////设置为默认收货地址(修改前)
+        //for (var i = 0; i < arrSet.length; i++) {
+        //    arrSet[i].index = i;
+        //    arrSet[i].onclick = function () {
+        //        for (var i = 0; i < arrSet.length; i++) {
+        //            arrAdress[i].className = '';
+        //        }
+        //        arrAdress[this.index].className = 'adresslist-active';
+        //    }
+        //}
+
+
+
     })();
 
     //新增收货地址
-    (function(){
+    (function () {
         var oNewAdd = document.getElementById('newadd');
         var clientH = document.body.clientHeight;
         var MaskWrap = document.getElementById('maskwrap');
@@ -48,28 +84,28 @@ window.onload = function () {
         var closeNewadd = document.getElementById('close-newadd');
         var oH5 = MaskMain.getElementsByTagName('h5')[0];
 
-        oNewAdd.onclick = function(){
-            MaskWrap.style.height = clientH+'px';
+        oNewAdd.onclick = function () {
+            MaskWrap.style.height = clientH + 'px';
             MaskWrap.style.display = 'block';
             MaskMain.style.display = 'block';
             oH5.innerHTML = '新增收货人信息';
         }
 
-        closeNewadd.onclick = function(){
+        closeNewadd.onclick = function () {
             MaskWrap.style.display = 'none';
             MaskMain.style.display = 'none';
         }
 
         //修改收货地址
         var content = document.getElementById('content');
-        var ModifyAddress = getByClass(content,'modifyaddress');
-        var removeaddress = getByClass(content,'removeaddress');
+        var ModifyAddress = getByClass(content, 'modifyaddress');
+        var removeaddress = getByClass(content, 'removeaddress');
         var maskR = document.getElementById('mask-main-remove');
         var closeMask = document.getElementById('close-mask');
 
-        for(var i=0;i<ModifyAddress.length;i++){
-            ModifyAddress[i].onclick = function(){
-                MaskWrap.style.height = clientH+'px';
+        for (var i = 0; i < ModifyAddress.length; i++) {
+            ModifyAddress[i].onclick = function () {
+                MaskWrap.style.height = clientH + 'px';
                 MaskWrap.style.display = 'block';
                 MaskMain.style.display = 'block';
                 oH5.innerHTML = '修改收货人信息';
@@ -77,15 +113,15 @@ window.onload = function () {
         }
 
         //删除地址
-        for(var i=0;i<removeaddress.length;i++){
-            removeaddress[i].onclick = function(){
+        for (var i = 0; i < removeaddress.length; i++) {
+            removeaddress[i].onclick = function () {
                 maskR.style.display = 'block';
-                MaskWrap.style.height = clientH+'px';
+                MaskWrap.style.height = clientH + 'px';
                 MaskWrap.style.display = 'block';
             }
         }
 
-        closeMask.onclick = function(){
+        closeMask.onclick = function () {
             MaskWrap.style.display = 'none';
             maskR.style.display = 'none';
         }
@@ -133,7 +169,7 @@ window.onload = function () {
     //发票选中状态
     (function () {
         var fPiao = document.getElementById('fpiao');
-        var aShow = getByClass(fPiao,'show');
+        var aShow = getByClass(fPiao, 'show');
         var aBtn = document.getElementById('btn');
         var fpbtn = aBtn.getElementsByTagName('a');
         var creatZzs = document.getElementById('zzs');
@@ -149,34 +185,34 @@ window.onload = function () {
         var oModify1 = document.getElementById('modify1');
         var PtfpCreat = document.getElementById('ptfpcreat');
 
-        Ptfpbc.onclick = function(){
-            PtfpCreat.getElementsByTagName('span')[0].innerHTML =  oPtfp.getElementsByTagName('input')[0].value;
+        Ptfpbc.onclick = function () {
+            PtfpCreat.getElementsByTagName('span')[0].innerHTML = oPtfp.getElementsByTagName('input')[0].value;
             oPtfp.style.display = 'none';
             PtfpCreat.style.display = 'block';
         }
 
-        Ptfpqx.onclick = function(){
+        Ptfpqx.onclick = function () {
             oPtfp.style.display = 'none';
         }
 
-        oModify1.onclick = function(){
+        oModify1.onclick = function () {
             PtfpCreat.style.display = 'none';
             oPtfp.style.display = 'block';
         }
 
-        zzsBc.onclick = function(){
-            for(var i=0;i<aInput.length;i++){
+        zzsBc.onclick = function () {
+            for (var i = 0; i < aInput.length; i++) {
                 aSpan[i].innerHTML = aInput[i].value;
             }
             creatZzs.style.display = 'none';
             oCreat.style.display = 'block';
         }
 
-        zzsQx.onclick = function(){
+        zzsQx.onclick = function () {
             creatZzs.style.display = 'none';
         }
 
-        oModify.onclick = function(){
+        oModify.onclick = function () {
             oCreat.style.display = 'none';
             creatZzs.style.display = 'block';
         }
@@ -315,6 +351,50 @@ window.onload = function () {
         mySelect('fhuofs1');
         mySelect('yunfzf1');
         mySelect('youhq1');
+
+    })();
+
+    //价格有变化和库存不足提示
+    (function () {
+        var oClose = getByClass(document, 'dianji');
+        var oXinjia = getByClass(document, 'xinjiage');
+        var oKcbz = document.getElementById('kcbz');
+        var closespan = oKcbz.getElementsByTagName('span')[0];
+        var oSure = document.getElementById('sureClose');
+        var oTijiao = document.getElementById('tijiaocgd');
+
+        for (var i = 0; i < oClose.length; i++) {
+            oClose[i].index = i;
+            oClose[i].onclick = function () {
+                oXinjia[this.index].style.display = 'block';
+            }
+        }
+
+        function closeFn(oParent){
+            var oSpan = oParent.getElementsByTagName('span')[0];
+            oSpan.onclick = function(){
+                oParent.style.display = 'none';
+            }
+        }
+
+        oTijiao.onclick = function(){
+            oKcbz.style.display = 'block';
+        }
+
+        for(var i=0;i<oXinjia.length;i++){
+            closeFn(oXinjia[i]);
+        }
+
+        function cloFn(doc){
+            doc.onclick = function(){
+                oKcbz.style.display = 'none';
+            }
+        }
+
+        var arr = [closespan,oSure];
+        for(var i=0;i<arr.length;i++){
+            cloFn(arr[i]);
+        }
 
     })();
 }
